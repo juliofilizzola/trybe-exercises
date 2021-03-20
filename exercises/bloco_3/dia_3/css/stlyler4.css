@@ -1,0 +1,11 @@
+div:hover{
+    border: black solid 3px;
+}
+
+div h3{
+    background-color: aquamarine;
+}
+
+div ~ h3{
+    background-color: red;
+}
