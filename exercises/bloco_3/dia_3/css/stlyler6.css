@@ -9,5 +9,7 @@
 
 */
 
-
+[li^='java']{
+color: red;
+}
 
