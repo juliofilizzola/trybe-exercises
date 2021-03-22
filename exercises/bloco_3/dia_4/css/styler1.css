@@ -1,13 +1,19 @@
 
 h1 {
-text-align: center;
+        text-align: center;
 }
 
 .award li{
+    margin-top: 100px;
     display: inline;
 }
-.top li{
-    display: inline-block;
+
+
+
+.first,.second, .third{
+   display: flex;
+   margin-left: auto;
+   margin-right: auto;
 
 }
 
@@ -17,27 +23,33 @@ text-align: center;
 }
 
 .first {
-background-color: rgb(235, 200, 84);
-font-size: 20px;
-height: 50px;
-text-align: center;
-width: 200px;
-
+    
+    background-color: rgb(235, 200, 84);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 200px;
+    
+    
 }
 
 .second {
-background-color: rgb(219, 219, 219);
-font-size: 20px;
-height: 50px;
-text-align: center;
-width: 300px;
+    background-color: rgb(219, 219, 219);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    margin-right: 650px;
 }
 
 .third {
-background-color: rgb(170, 142, 106);
-font-size: 20px;
-height: 50px;
-text-align: center;
-width: 300px;
+    background-color: rgb(170, 142, 106);
+    font-size: 20px;
+    height: 50px;
+    text-align: center;
+    width: 300px;
+    margin-left: 610px;
+    
+    
 }
 
