@@ -39,8 +39,26 @@ img{
     width: 500px;
 }
 
+.facts-all{
+    margin-left: 80px;
+}
 h2.facts-all{
     text-align:center;
     font-size: 30px;
     padding: 10px;
 }
+
+h3 {
+    margin-left: 150px;
+    font-size: 25px;
+    padding: 10px;
+}
+
+
+a.ref {
+    margin-left: 100px;
+    display: block;
+    text-decoration-line: none;
+    color: black;
+}
+
