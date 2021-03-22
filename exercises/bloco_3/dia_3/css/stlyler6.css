@@ -9,7 +9,14 @@
 
 */
 
-[li^='java']{
-color: red;
+ul {
+  background-color: yellow;
 }
 
+ul :nth-of-type(2n){
+  background-color: green;
+}
+
+ul :nth-of-type(2n){
+  text-transform:uppercase;
+}
