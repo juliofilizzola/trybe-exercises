@@ -20,3 +20,15 @@ ul :nth-of-type(2n){
 ul :nth-of-type(2n){
   text-transform:uppercase;
 }
+
+/* parte 2*/
+
+h1, h3{
+  color: red;
+
+}
+
+em{
+  font-size: 40px;
+  -webkit-text-stroke: 1px red;
+}
