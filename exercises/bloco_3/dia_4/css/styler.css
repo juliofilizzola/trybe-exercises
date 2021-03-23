@@ -43,7 +43,7 @@ img{
     margin-left: 80px;
 }
 h2.facts-all{
-    text-align:center;
+    /* text-align:center; */
     font-size: 30px;
     padding: 10px;
 }
