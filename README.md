@@ -6,6 +6,6 @@
 
 Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas bem básicas até coisas mais complexas, a medida que adentro ao curso.
 
-*Estou em plena evolução, como qualquer ser evoluiu de uma criança para adulto.*
+*"Estou em plena evolução, como qualquer ser evoluiu de uma criança para adulto."*
 
 Caso queira me ajudar, pode fazer um CD nos pull requests que tiver, ficarei bastante contente com sua ajuda.
