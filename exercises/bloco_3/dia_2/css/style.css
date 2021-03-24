@@ -1,0 +1,32 @@
+body {
+    background-color: aqua;
+    font-size: 16px;
+}
+
+h1 {
+    font-size: 64px;
+    color: orange;
+    font-family: sans-serif;
+}
+
+p {
+    font-weight: 600;
+    font-size: 3rem;
+    font-style: italic;
+}
+
+#am {
+    background: yellow;
+}
+
+#red {
+    background: red;
+}
+
+#br {
+    background: brown;
+}
+
+.exe {
+    background: orchid;
+}
