@@ -72,3 +72,15 @@ switch(A,B,C){
     break
 }
 
+// Sexta 
+
+console.log('.........Sexta........')
+
+var xadrez = "Biichop"
+var nome1 = xadrez.toLowerCase('bichop')
+if (nome1 === 'bichop'){
+  console.log("lateralmente")
+
+} else {
+  console.log('não é essa peça!')
+}
