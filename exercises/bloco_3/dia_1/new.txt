@@ -1,0 +1,4 @@
+No primeiro dia foi realizado uma atidade para fazer uma lista 
+de pessoas que já fiz amizade na trybe e também adicionar duas 
+imagens, uma interna, vindo do proprio diretorio, e outra 
+vinda da internet, com uma URL.
