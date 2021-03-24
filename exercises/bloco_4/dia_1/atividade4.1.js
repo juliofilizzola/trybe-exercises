@@ -84,3 +84,31 @@ if (nome1 === 'bichop'){
 } else {
   console.log('não é essa peça!')
 }
+
+// Setima.
+
+console.log('.........Setima........')
+
+var valor = 50;
+
+if (valor >= 90){
+  console.log('A');
+}
+else if(valor >= 80){
+  console.log('B');
+}
+else if (valor >= 70){
+  console.log('C');
+}
+else if (valor >= 60){
+  console.log('D');
+}
+else if (valor >= 50) {
+  console.log('E');
+}
+else if (valor > 50) {
+  console.log('F');
+}
+else {
+  console.log('Valor Invalido!')
+}
