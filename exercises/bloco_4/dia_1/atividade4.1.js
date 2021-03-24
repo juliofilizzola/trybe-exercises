@@ -15,4 +15,13 @@ console.log('.........segundo........')
 var maxValor = Math.max(a, b)
 console.log(maxValor)
 
+// terceiro
+console.log('.........terceiro........')
 
+var um = 50;
+var dois = 5;
+var tres = 10;
+
+var mValor = Math.max(um, dois, tres)
+
+console.log(mValor)
