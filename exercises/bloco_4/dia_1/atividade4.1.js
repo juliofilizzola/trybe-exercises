@@ -127,3 +127,17 @@ if (num1, num2, num3 % 2 === 0){
 else {
   console.log(false)
 }
+
+// Nona 
+
+console.log('.........Nona........')
+let num1 = 2;
+let num2 = 5;
+let num3 = 8;
+
+if (num1, num2, num3 % 2 === 1){
+  console.log(true)
+}
+else {
+  console.log(false)
+}
