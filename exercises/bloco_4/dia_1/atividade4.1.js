@@ -43,3 +43,32 @@ else{
   console.log('indeterminado')
 }
 
+// quinto
+console.log('.........Quinto........')
+
+var A = 60;
+var B = 70;
+var C = 60;
+
+if(A+B+C == 180) {
+  console.log(true)
+}
+else if (A+B+C != 180) {
+  console.log(false)
+}
+else {
+  console.log('erro no xablau')
+}
+
+switch(A,B,C){
+  case A+B+C ==180:
+    console.log(true)
+    break;
+  case A+B+C !== 180:
+    console.log(false)
+    break
+  default:
+    console.log('xabaluzinho')
+    break
+}
+
