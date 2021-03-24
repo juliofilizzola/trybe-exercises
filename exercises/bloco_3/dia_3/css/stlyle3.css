@@ -1,0 +1,17 @@
+h1, p {
+    text-align: center;
+}
+
+.ol:hover{
+    background-color: red;
+}
+
+.ol:active{
+    color: white;
+    background-color: green;
+    font-family: Chango ;
+}
+
+ul {
+    list-style: none;
+}

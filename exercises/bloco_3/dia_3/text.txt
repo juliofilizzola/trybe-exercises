@@ -1,0 +1,10 @@
+Aqui no dia 3, vimos sobre seletores e posicionamento, 
+usando o CSS para fazer todas as atividades.
+
+Primeira atividade foi sobre box model.
+
+Segunda atividades foi sobre posicionamneto de elementos. 
+
+Terceira e quarta atividades foi sobre pseudoclasses e seletores.
+
+a quinta foi sobre combinações de classes. 
