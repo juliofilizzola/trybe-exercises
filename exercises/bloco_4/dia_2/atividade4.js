@@ -69,11 +69,24 @@ let menor = 200;
 
 for (let index =0; index <numbers.length; index += 1 ){
   if(numbers[index] < menor){
-    menor = numbers[index]
+    menor = numbers[index];
   }
 }
 
-console.log(menor)
+console.log(menor);
 
 // 8
 
+let num1 = [];
+
+for (let index = 0; index <= 25; index += 1){
+  num1.push(index);
+}
+
+console.log(num1);
+
+// 9
+
+for(let index = 0; index < num1.length; index +=1 ){
+  console.log(num1[index] / 2);
+}
