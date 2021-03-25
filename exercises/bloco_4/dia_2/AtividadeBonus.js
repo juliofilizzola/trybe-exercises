@@ -34,7 +34,7 @@ for(let index = 0; index< number.length; index += 1){
     total.push(number[index] * number[index + 1]);
   }
   else {
-    total.push(number[index * 2])
+    total.push(number[index * 2]);
   }
 }
 
