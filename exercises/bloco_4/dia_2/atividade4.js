@@ -13,9 +13,36 @@ let soma = 0;
 //     soma += numbers[i]
 //     console.log(soma)
 // }
+// for (let index =0; index <numbers.length; index += 1 ){
+//   soma += numbers[index]
+//   console.log(soma)
+// }
+
+// var total = numbers.reduce((total, numbers) => total + numbers, 0)
+// console.log(total)
+//3
+
+// let media = 0;
 for (let index =0; index <numbers.length; index += 1 ){
-  soma += numbers[index]
-  console.log(soma)
+ soma += numbers[index]
+}
+let mediaTotal = soma / numbers.length
+console.log(mediaTotal)
+
+if(mediaTotal > 20){
+  console.log('Valor Maior do que 20')
+}
+else {
+  console.log('Valor menor ou igual a 20')
+}
+ 
+
+//5
+let menor = 0;
+for (let index =0; index <numbers.length; index += 1 ){
+  if(numbers[index]>menor){
+    menor =numbers[index]
+  }
 }
 
-//3
+console.log(menor)
