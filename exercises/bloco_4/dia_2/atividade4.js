@@ -38,14 +38,14 @@ else {
  
 
 //5
-let menor = 0;
+let maior = 0;
 for (let index =0; index <numbers.length; index += 1 ){
-  if(numbers[index]>menor){
-    menor =numbers[index]
+  if(numbers[index]>maior){
+    maior =numbers[index]
   }
 }
 
-console.log(menor)
+console.log(maior)
 
 //6
 let result = 0;
@@ -63,4 +63,17 @@ if (result === 0 ){
   console.log(result);
 }
 
+
+// 7
+let menor = 200;
+
+for (let index =0; index <numbers.length; index += 1 ){
+  if(numbers[index] < menor){
+    menor = numbers[index]
+  }
+}
+
+console.log(menor)
+
+// 8
 
