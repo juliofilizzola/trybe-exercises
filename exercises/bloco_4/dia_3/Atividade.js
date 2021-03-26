@@ -1,7 +1,14 @@
-let n = 8;
+//1
 
-if (n > 1){
+let n = 5;
+let espaco = '';
+let quest = '*';
 
-} else {
-  console.log('não tem nada aqui irmão')
-}
+for (let index = 0; index < n; index += 1){
+  espaco = espaco + quest
+};
+
+for (let index = 0; index < n; index += 1) {
+  console.log(espaco)
+};
+
