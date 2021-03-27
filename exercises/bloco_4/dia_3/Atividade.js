@@ -17,13 +17,34 @@ for (let index = 0; index < n; index += 1) {
 
 // declarar uma variavel para servir de base
 
+// let size = 11;
+// let symbol = '*';
+// let inputline = '';
+
+// for(let index = 0; index <= size; index += 1){
+//   console.log(inputline);
+//   inputline = inputline + symbol;
+// }
+
+
+// 3
+
+
 let size = 11;
 let symbol = '*';
 let inputline = '';
+let imputPosition = size;
 
 for(let index = 0; index <= size; index += 1){
+  for(let cindex = 0; cindex<= size; cindex += 1){
+    if(cindex < imputPosition){
+      inputline = inputline + ' ';
+    } else {
+      inputline = inputline + symbol
+    }
+  }
   console.log(inputline);
-  inputline = inputline + symbol;
+  inputline = '';
+  imputPosition -= 1;
 }
-
 
