@@ -19,3 +19,6 @@ let max = number.reduce(function(a, b){
 })
 
 console.log(max)
+
+//atividade 3
+
