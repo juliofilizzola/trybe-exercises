@@ -6,4 +6,11 @@ let info = {
   nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
 };
 
-console.log('Bem Vinda ' + info.personagem)
+console.log('Bem Vinda ' + info.personagem);
+
+// atividade 2
+
+info['Recorrente'] = 'sim';
+
+console.log(info);
+
