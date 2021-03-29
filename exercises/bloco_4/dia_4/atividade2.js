@@ -28,3 +28,24 @@ let min = array.reduce(function(a, b){
 })
 
 console.log(min)
+
+// atividade 4 
+
+let nameList = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; 
+
+
+for(let key  in nameList){
+  console.log(nameList[key].length)
+}
+
+function contador (nameList) {
+  var maxP = nameList[0];
+  for (let keys in nameList){
+    if(maxP.length < nameList[keys].length){
+      maxP = nameList[keys]
+    }
+  }
+  return maxP
+}
+
+console.log(contador (nameList))
