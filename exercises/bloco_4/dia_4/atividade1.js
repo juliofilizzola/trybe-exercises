@@ -19,3 +19,11 @@ console.log(info);
 for (let keys in info){
   console.log(keys)
 };
+
+// atividade 4
+
+for (let keys in info){
+  console.log(info[keys])
+}
+
+//
