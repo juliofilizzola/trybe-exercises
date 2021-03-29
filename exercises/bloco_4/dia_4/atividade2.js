@@ -1,17 +1,18 @@
 // 1
 let names = 'Renner';
 
-function verificaai( names){
-  let arrayP =  names.split('');
-  let epali =  true;
-  for(let pa in arrayP){
-    if(arrayP[pa] !== names[(names.length - 1) - pa]){
-      epali = false;
-    }
+
+
+function verificapali (names){
+  let reverse = names.split('').reverse().join('');
+  if(reverse === names){
+    return true;
+  } else {
+    return false;
   }
-  return epali;
 }
-connsole.log(verificaai(arara))
+
+console.log(verificapali('merda'))
 //2 
 
 let number = [2, 3, 6, 7, 10, 1];
