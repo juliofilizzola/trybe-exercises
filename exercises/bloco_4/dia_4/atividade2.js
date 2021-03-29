@@ -75,4 +75,16 @@ console.log(contador (nameList));
 // }
 // console.log(maisRepetido(numeros));
 
+// atividade 6
 
+let n = 5;
+
+function contar (n){
+  let total = 0;
+  for(let index = 1; index <= n; index +=1){
+    total = total + index
+  }
+  return total;
+}
+
+console.log(contar(n))
