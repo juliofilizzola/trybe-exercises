@@ -34,18 +34,45 @@ console.log(min)
 let nameList = ['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']; 
 
 
-for(let key  in nameList){
-  console.log(nameList[key].length)
-}
+for(let key in nameList){
+  console.log(nameList[key].length);
+};
 
 function contador (nameList) {
   var maxP = nameList[0];
   for (let keys in nameList){
     if(maxP.length < nameList[keys].length){
-      maxP = nameList[keys]
-    }
-  }
-  return maxP
-}
+      maxP = nameList[keys];
+    };
+  };
+  return maxP;
+};
 
-console.log(contador (nameList))
+console.log(contador (nameList));
+
+// Atividade 5
+
+// let numeros = [2, 3, 2, 5, 8, 2, 3];
+
+// function maisRepetido(numeros) {
+//   let contRepetido = 0;
+//   let contNumero = 0;
+//   let indexNumeroRepetido = 0;
+//   for (let index in numeros) {
+//     let verificaNumero = numeros[index];
+//     for (let index2 in numeros) {
+//       if (verificaNumero === numeros[index2]) {
+//         contNumero += 1;
+//       }
+//     }
+//     if (contNumero > contRepetido) {
+//       contRepetido = contNumero;
+//       indexNumeroRepetido = index;
+//     }
+//     contNumero = 0;
+//   }
+//   return numeros[indexNumeroRepetido];
+// }
+// console.log(maisRepetido(numeros));
+
+
