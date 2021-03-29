@@ -14,3 +14,8 @@ info['Recorrente'] = 'sim';
 
 console.log(info);
 
+// atividade 3
+
+for (let keys in info){
+  console.log(keys)
+};
