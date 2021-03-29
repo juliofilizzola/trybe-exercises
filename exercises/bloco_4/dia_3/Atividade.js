@@ -6,15 +6,7 @@ let quest = '*';
 
 for (let index = 0; index < n; index += 1){
   espaco = espaco + quest;
-  // console.log(espaco)
-
-
-  // if (index <= n){
-  //   console.log(espaco)
-  // } else {
-  //   console.log('cab')
-  // }
-};
+}
 
 for (let index = 0; index < n; index += 1) {
   console.log(espaco)
@@ -25,7 +17,7 @@ for (let index = 0; index < n; index += 1) {
 
 // declarar uma variavel para servir de base
 
-// let size = 11;
+// let size = 5;
 // let symbol = '*';
 // let inputline = '';
 
@@ -44,6 +36,7 @@ let inputline = '';
 let imputPosition = size;
 
 for(let index = 0; index <= size; index += 1){
+  inputline = '';
   for(let cindex = 0; cindex < size; cindex += 1){
     if(cindex < imputPosition){
       inputline = inputline + ' ';
@@ -52,7 +45,7 @@ for(let index = 0; index <= size; index += 1){
     }
   }
   console.log(inputline);
-  inputline = '';
+  
   imputPosition -= 1;
 }
 
