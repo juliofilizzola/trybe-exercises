@@ -1,8 +1,6 @@
 // 1
 let names = 'Renner';
 
-
-
 function verificapali (names){
   let reverse = names.split('').reverse().join('');
   if(reverse === names){
