@@ -24,3 +24,15 @@ console.log('A jogadora '+ player.name + ' ' + player.lastName + ' ' +  'possui 
 // For in
 
 
+let names = {
+  person1: 'João',
+  person2: 'Maria',
+  person3: 'Jorge' 
+} 
+
+for(let key in names){
+  console.log('Olá, ' + names[key])
+};
+
+// outro exemplo de for in
+
