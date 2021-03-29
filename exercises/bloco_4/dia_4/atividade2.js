@@ -22,3 +22,9 @@ console.log(max)
 
 //atividade 3
 
+let array = [2, 4, 6, 7, 10, 0, -3];
+let min = array.reduce(function(a, b){
+  return Math.min(a,b)
+})
+
+console.log(min)
