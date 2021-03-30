@@ -88,3 +88,19 @@ function contar (n){
 }
 
 console.log(contar(n))
+
+//7
+
+let string_word = 'trybe';
+let string_ending = 'be';
+
+function verificaNumero1 (string_word , string_ending) {
+  Palavra = string_word.split('');
+  fimDaPalavra = string_ending.split('')
+
+  if(Palavra > fimDaPalavra){
+    console.log(Palavra + fimDaPalavra)
+  }
+
+}
+ 

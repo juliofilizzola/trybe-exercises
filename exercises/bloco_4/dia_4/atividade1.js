@@ -12,19 +12,19 @@ console.log('Bem Vinda ' + info.personagem);
 
 info['Recorrente'] = 'Sim';
 
-console.log(info);
+// console.log(info);
 
-// atividade 3
+// // atividade 3
 
-for (let keys in info){
-  console.log(keys)
-};
+// for (let keys in info){
+//   console.log(keys)
+// };
 
-// atividade 4
+// // atividade 4
 
-for (let keys in info){
-  console.log(info[keys])
-}
+// for (let keys in info){
+//   console.log(info[keys])
+// }
 
 //atividade 5
 
@@ -37,9 +37,9 @@ let info2 = {
 
 
 for (let keys in info){
-  if(info[keys]=== info.Recorrente && info[keys] === 'Sim' && info2[keys] === 'Sim'){
+  if( info[keys] === 'Sim' && info2[keys] === 'Sim'){
     console.log('Ambos Recorrentes');
   } else {
     console.log( info[keys] + ' e ' + info2[keys]);
-  };
+  }; 
 }
