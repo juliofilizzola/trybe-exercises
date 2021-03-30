@@ -1,5 +1,5 @@
 // 1
-let names = 'Renner';
+let names = 'renner';
 
 function verificapali (names){
   let reverse = names.split('').reverse().join('');
@@ -10,7 +10,7 @@ function verificapali (names){
   }
 }
 
-console.log(verificapali('merda'))
+console.log(verificapali(names))
 //2 
 
 let number = [2, 3, 6, 7, 10, 1];
