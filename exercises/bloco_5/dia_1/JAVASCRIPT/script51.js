@@ -12,8 +12,41 @@
         */
 
 
-   let main = document.querySelectorAll('.main-content');
-   main[0].style.backgroundColor = 'rgb(76,164,109)';
+  function mainColor () {
+    let main = document.querySelectorAll('.main-content');
+    return main[0].style.backgroundColor = 'rgb(76,164,109)';
+  }
+  mainColor();
+   function centerColor () {
+    let centerColor =  document.querySelectorAll('.center-content');
+    return centerColor[0].style.backgroundColor = 'white';
+   }
+   centerColor();
+   function text1 () {
+    let text = document.getElementsByTagName('p')[1];
+    text.innerText = 'Independente Financeiramemnte'
+   }
+   text1();
+function corrigir () {
+  let text1 = document.getElementsByClassName('title')[0];
+  text1.innerText =  'Exerci'
+}
+
+corrigir();
+
+function maius () {
+  let paragraf = document.getElementsByTagName('p')[0];
+  paragraf.innerHTML = paragraf.innerHTML.toUpperCase();
  
-   let centerColor =  document.querySelectorAll('.center-content');
-   centerColor[0].style.backgroundColor = 'white'
+};
+
+maius();
+ 
+function prints () {
+  let impri = document.getElementsByTagName('p');
+  for (let index = 0; index < impri.length; index += 1){
+    console.log(impri[index].innerHTML);
+  }
+}
+
+prints();
