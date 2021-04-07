@@ -6,20 +6,28 @@ const myWebpage = document.getElementById('mySpotrybefy');
 
 
 
-let container = document.getElementsByClassName('container')
+let cont = document.querySelector('.container');
+let verifica = document.querySelector('body');
 
-// atividade 1
+// atividade 2.2
 
-
+cont.addEventListener('click', classEvent);
 
 function classEvent (e) {
-  document.getElementsByClassName('tech')[0].innerText = e.target.value;
+  document.getElementsByClassName('tech')[0].classList.remove('tech');
+  e.target.className = 'tech';
+ 
 }
 
-// pode usar o target, creio que seja o caminho mais fácil. 
+// atividade 3
 
-container.addEventListener('click', classEvent)
+function textN (e){
+  let tecText = document.getElementsByClassName('tech')[0];
+  tecText.innerText = e.target.value;
+}
 
+
+input.addEventListener('input', textN);
 
 
 
