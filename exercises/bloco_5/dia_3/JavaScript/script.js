@@ -4,6 +4,9 @@ const divTres = document.getElementById('divTres');
 const input = document.getElementById('input');
 const myWebpage = document.getElementById('mySpotrybefy');
 
+
+
+
 /*
  Copie esse arquivo e edite apenas ele;
  Crie uma função que adicione a classe 'tech' ao elemento selecionado;
