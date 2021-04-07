@@ -6,6 +6,38 @@ const myWebpage = document.getElementById('mySpotrybefy');
 
 
 
+let container = document.getElementsByClassName('container')
+
+// atividade 1
+
+
+
+function classEvent (e) {
+  document.getElementsByClassName('tech')[0].innerText = e.target.value;
+}
+
+// pode usar o target, creio que seja o caminho mais fácil. 
+
+container.addEventListener('click', classEvent)
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 /*
  Copie esse arquivo e edite apenas ele;
