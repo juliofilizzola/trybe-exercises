@@ -45,3 +45,9 @@ function creatDays() {
 
 creatDays();
 
+function fridays() {
+  let buttonStart = document.querySelector('.buttons-container');
+  let buttonCreate = document.createAttribute('button');
+  buttonStart.appendChild(buttonCreate);
+}
+fridays()
