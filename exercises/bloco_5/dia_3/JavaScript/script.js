@@ -31,15 +31,16 @@ input.addEventListener('input', textN);
 
 
 // Atividade 4
+myWebpage.addEventListener('mouseover', colorRend );
+myWebpage.addEventListener('dblclick', linkExterno );
 
-divUm.addEventListener('mouseover', colorRend);
-divDois.addEventListener('mouseover', colorRend);
-divTres.addEventListener('mouseover', colorRend);
 
 function colorRend (e) {
-  e.target.style.backgroundColor = 'yellow';
-  e.target.style.color = 'black';
+  e.target.style.color = 'yellow';
+}
 
+function linkExterno () {
+  window.location.replace('https://juliofilizzola.github.io/')
 }
 
 
