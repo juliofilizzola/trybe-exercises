@@ -30,7 +30,7 @@ function textN (e){
 input.addEventListener('input', textN);
 
 
-// Atividade 4
+// Atividade 4 5
 myWebpage.addEventListener('mouseover', colorRend );
 myWebpage.addEventListener('dblclick', linkExterno );
 
@@ -44,7 +44,6 @@ function linkExterno () {
 }
 
 
-// Atividade 5
 
 
 
