@@ -85,3 +85,40 @@ function colorHoliday () {
 }
 
 colorHoliday()
+
+function creatFryday (buttonName) {
+  
+  let buttonStart = document.querySelector('.buttons-container');
+  let buttonCreate = document.createElement('button');
+  let idButton = 'btn-friday';
+
+  buttonCreate.innerHTML = buttonName;
+  buttonCreate.id = idButton;
+  buttonStart.appendChild(buttonCreate);
+
+
+}
+
+creatFryday('Sexta-feira')
+
+function colorHoliday () {
+  let buttonF = document.querySelector('#btn-holiday');
+  let holidaylist = document.querySelectorAll('.holiday');
+  console.log(holidaylist)
+  let backgroundColorHoliday = 'rgb(238,238,238)';
+  let BGNewColor = 'white';
+
+
+  buttonF.addEventListener('click', function () {
+    for (let index = 0; index < holidaylist.length; index += 1) {
+      if(holidaylist[index].style.backgroundColor === BGNewColor) {
+        holidaylist[index].style.backgroundColor = backgroundColorHoliday;
+      } else {
+        holidaylist[index].style.backgroundColor = BGNewColor;
+      }
+      
+    }
+  })
+}
+
+colorHoliday()
