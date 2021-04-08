@@ -27,11 +27,11 @@ function creatDays() {
     let daysItem = document.createElement('li');
 
     if (element === 24 | element === 31){
-      dayList.className = 'day holiday';
+      daysItem.className = 'day holiday';
       daysItem.innerHTML = element;
       dayList.appendChild(daysItem);
     } else if(element === 4 | element === 11 | element === 18 | element === 25){
-      dayList.className = 'day friday';
+      daysItem.className = 'day friday';
       daysItem.innerHTML = element;
       dayList.appendChild(daysItem);
     } else {
