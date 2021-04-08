@@ -30,6 +30,20 @@ function textN (e){
 input.addEventListener('input', textN);
 
 
+// Atividade 4
+
+divUm.addEventListener('mouseover', colorRend);
+divDois.addEventListener('mouseover', colorRend);
+divTres.addEventListener('mouseover', colorRend);
+
+function colorRend (e) {
+  e.target.style.backgroundColor = 'yellow';
+  e.target.style.color = 'black';
+
+}
+
+
+// Atividade 5
 
 
 
