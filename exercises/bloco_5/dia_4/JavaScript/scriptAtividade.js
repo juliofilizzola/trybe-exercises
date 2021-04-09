@@ -1,10 +1,4 @@
-
-
-
 window.onload = function() {
-
-
-
   // create span
 
   function createSpan (string, id) {
@@ -53,9 +47,7 @@ window.onload = function() {
   buttonColorOptions('Blue');
   buttonColorOptions('Magenta');
 
-
   /** Funções do Tamanho da fonte. */
-
   
   function buttonLineHeight (base){
     let father = document.getElementById('line-height');
