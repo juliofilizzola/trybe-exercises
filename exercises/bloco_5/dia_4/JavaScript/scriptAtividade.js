@@ -17,7 +17,7 @@ window.onload = function() {
   createSpan('Cor de Fundo!', 'background-color');
   createSpan('Cor da Fonte!', 'font-color');
   createSpan('Espaçamento Entre as Fontes!', 'line-height');
-  createSpan('Fonte!', 'font-family');
+  createSpan('Tipo de Fonte!', 'font-family');
 
   /** Funções do Cor de fundo. */
 
@@ -70,8 +70,17 @@ window.onload = function() {
   buttonLineHeight('2.0');
   buttonLineHeight('3.0');
 
+  /** Funções Font Family */
 
+  function buttonFontFamily (base){
+    let father = document.getElementById('font-family');
+    let buttonStart = document.createElement('button');
+    father.appendChild(buttonStart);
+    buttonStart.innerText = base;
+  }
 
+  buttonFontFamily('Arial');
+  buttonFontFamily('Times New Roman');
 
 
 
