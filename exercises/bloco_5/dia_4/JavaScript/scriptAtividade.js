@@ -16,7 +16,8 @@ window.onload = function() {
 
   createSpan('Cor de Fundo!', 'background-color');
   createSpan('Cor da Fonte!', 'font-color');
-  createSpan('Espaçamento Entre as Fontes!', 'line-height')
+  createSpan('Espaçamento Entre as Fontes!', 'line-height');
+  createSpan('Fonte!', 'font-family');
 
   /** Funções do Cor de fundo. */
 
