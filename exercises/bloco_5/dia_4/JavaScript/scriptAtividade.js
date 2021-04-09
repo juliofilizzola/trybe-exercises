@@ -41,7 +41,25 @@ window.onload = function() {
     father.appendChild(spanStart);
   }
 
-  createSpanColor('Cor da Fonte!')
+  createSpanColor('Cor da Fonte!');
+
+  // criar button Color options
+
+  function buttonColorOptions (base){
+    let father = document.getElementById('font-color');
+    let buttonStart = document.createElement('button');
+    father.appendChild(buttonStart);
+    buttonStart.innerText = base;
+  }
+  
+  buttonColorOptions('Black');
+  buttonColorOptions('Red');
+  buttonColorOptions('Black');
+  buttonColorOptions('Blue');
+  buttonColorOptions('Magenta');
+
+
+
 
 
 
