@@ -3,18 +3,23 @@
 
 window.onload = function() {
 
-/** Funções do Cor de fundo. */
+
 
   // create span
 
-  function createSpan (string) {
-    let father = document.getElementById('background-color');
+  function createSpan (string, id) {
+    let father = document.getElementById(id);
     let spanStart = document.createElement('span');
     spanStart.innerText = string;
     father.appendChild(spanStart);
   }
 
-  createSpan('Cor de Fundo!')
+  createSpan('Cor de Fundo!', 'background-color');
+  createSpan('Cor da Fonte!', 'font-color');
+  createSpan('Espaçamento Entre as Fontes!', 'line-height')
+
+  /** Funções do Cor de fundo. */
+
   // create button.
 
   function createButton (base){
@@ -30,20 +35,9 @@ window.onload = function() {
   createButton('Magenta');
   createButton('Blue');
 
-/** Funções do Cor de fundo */
+  /** Funções do Cor de fundo */
 
-  // Create Span Cor de Fundo.
-
-  function createSpanColor (string) {
-    let father = document.getElementById('font-color');
-    let spanStart = document.createElement('span');
-    spanStart.innerText = string;
-    father.appendChild(spanStart);
-  }
-
-  createSpanColor('Cor da Fonte!');
-
-  // criar button Color options
+   // criar button Color options
 
   function buttonColorOptions (base){
     let father = document.getElementById('font-color');
@@ -58,6 +52,22 @@ window.onload = function() {
   buttonColorOptions('Blue');
   buttonColorOptions('Magenta');
 
+
+  /** Funções do Tamanho da fonte. */
+
+  
+  function buttonLineHeight (base){
+    let father = document.getElementById('line-height');
+    let buttonStart = document.createElement('button');
+    father.appendChild(buttonStart);
+    buttonStart.innerText = base;
+  }
+
+  buttonLineHeight('1');
+  buttonLineHeight('Normal');
+  buttonLineHeight('1.5');
+  buttonLineHeight('2.0');
+  buttonLineHeight('3.0');
 
 
 
