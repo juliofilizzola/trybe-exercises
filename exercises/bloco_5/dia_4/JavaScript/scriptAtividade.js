@@ -3,7 +3,9 @@
 
 window.onload = function() {
 
-// create span
+/** Funções do Cor de fundo. */
+
+  // create span
 
   function createSpan (string) {
     let father = document.getElementById('background-color');
@@ -13,7 +15,7 @@ window.onload = function() {
   }
 
   createSpan('Cor de Fundo!')
-// create button.
+  // create button.
 
   function createButton (base){
     let father = document.getElementById('background-color');
@@ -28,7 +30,18 @@ window.onload = function() {
   createButton('Magenta');
   createButton('Blue');
 
+/** Funções do Cor de fundo */
 
+  // Create Span Cor de Fundo.
+
+  function createSpanColor (string) {
+    let father = document.getElementById('font-color');
+    let spanStart = document.createElement('span');
+    spanStart.innerText = string;
+    father.appendChild(spanStart);
+  }
+
+  createSpanColor('Cor da Fonte!')
 
 
 
