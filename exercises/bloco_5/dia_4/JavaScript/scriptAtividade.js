@@ -3,20 +3,30 @@
 
 window.onload = function() {
 
+// create span
+
+  function createSpan (string) {
+    let father = document.getElementById('background-color');
+    let spanStart = document.createElement('span');
+    spanStart.innerText = string;
+    father.appendChild(spanStart);
+  }
+
+  createSpan('Cor de Fundo!')
 // create button.
 
-function createButton (base){
-  let father = document.getElementById('background-color');
-  let buttonStart = document.createElement('button');
-  father.appendChild(buttonStart);
-  buttonStart.innerText = base;
-}
+  function createButton (base){
+    let father = document.getElementById('background-color');
+    let buttonStart = document.createElement('button');
+    father.appendChild(buttonStart);
+    buttonStart.innerText = base;
+  }
 
-createButton('Green');
-createButton('Black');
-createButton('Red');
-createButton('Magenta');
-createButton('Blue');
+  createButton('Green');
+  createButton('Black');
+  createButton('Red');
+  createButton('Magenta');
+  createButton('Blue');
 
 
 
