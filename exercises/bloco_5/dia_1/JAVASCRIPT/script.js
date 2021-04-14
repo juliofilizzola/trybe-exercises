@@ -1,0 +1,1 @@
+console.log(document.getElementById('teste').innerText = 'Isso é um texto gerado por JAVASCRIPT!');
