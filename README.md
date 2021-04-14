@@ -10,12 +10,12 @@ Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas 
 *"Estou em plena evolução, como qualquer ser evoluiu de uma criança para adulto."*
 
 ### O que eu já aprendi.
+
 1 - Git e Github.
 2 - Conceito de HTML e Semantica.
 3 - CSS e Box Model.
 4 - Introdução a o JavaScript.
 5 - Dom e Seus Seletores.
 6 - Web Storage.
-
 
 Caso queira me ajudar, pode fazer um CD nos pull requests que tiver, ficarei bastante contente com sua ajuda.

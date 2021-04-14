@@ -1,0 +1,7 @@
+O seguindo dia aprendemos sobre CSS.
+A atividade proposta tinha como modificar 
+algumas tags no HTML.
+
+OBS: nesse diretoiro contem uma parasta CSS.
+Aparti desse dia todas a atividades desse bloco (bloco 3)
+terá uma pasta CSS.

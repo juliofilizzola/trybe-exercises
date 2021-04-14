@@ -1,0 +1,41 @@
+body {
+    font-size: 16px;
+}
+
+
+h1 {
+    font-family: sans-serif;
+
+}
+
+p{
+    font-weight: 600;
+    font-size: 48px ;
+    font-style: italic;
+    text-align: center;
+}
+
+.am {
+background-color: yellow;
+}
+
+.red {
+    background-color: red;
+}
+.ma {
+    background-color: brown;
+}
+
+
+h1 {
+    font-size: 64px;
+    color: orange;
+}
+
+ul {
+    background-color: orchid;
+}
+
+.fat, .tex {
+    background-color: palevioletred;
+}

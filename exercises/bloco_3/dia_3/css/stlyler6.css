@@ -14,12 +14,27 @@ ul {
 }
 
 ul :nth-of-type(2n){
-  background-color: green;
+    color: green;
 }
-
-ul :nth-of-type(2n){
+/* 
+ul :nth-child(2n + 1*1){
+  */
+/* }
+li {
+  counter-increment: none;
+}
+li::before {
+  content: counter(nature-count);
+}
+li:first-child,
+li:nth-child(2n + 4),
+li:nth-child(3n + 6),
+li:nth-child(5n + 10),
+li:nth-child(7n + 14) {
   text-transform:uppercase;
-}
+  color:brown;
+  counter-increment: prime-count nature-count;
+} */
 
 /* parte 2*/
 
@@ -31,4 +46,9 @@ h1, h3{
 em{
   font-size: 40px;
   -webkit-text-stroke: 1px red;
+}
+
+
+li[class*="Java"]{
+  color: red;
 }

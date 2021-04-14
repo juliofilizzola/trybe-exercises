@@ -1,0 +1,12 @@
+h1 {
+    font-size: 64px;
+    color: orange;
+}
+
+ul {
+    background-color: orchid;
+}
+
+.fat, .tex {
+    background-color: palevioletred;
+}
