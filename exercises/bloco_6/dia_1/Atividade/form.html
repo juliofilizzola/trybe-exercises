@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="./css/style.css">
+  <title>New Currículo</title>
+</head>
+<body>
+  <h1>Currículo</h1>
+  <form action="" method="get" id="formu" enctype="multipart/form-data">
+    <fieldset id="first">
+      <div>
+        <label for="name-completed">Seu nome completo:</label>
+        <input type="text" maxlength="40" required id="name-completed">
+      </div>
+      
+
+      <div>
+        <label for="e-mai">Seu E-Mail:</label>
+        <input type="email" maxlength="50" required id="e-mai">
+      </div>
+      
+      <div>
+        <label for="CPF">Seu CPF:</label>
+        <input type="text" name="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" min="1" max="14" 
+        title="Digite um CPF no formato: xxx.xxx.xxx-xx" required id="CPF">
+      </div>
+
+      <div>
+        <label for="ende">Seu Endereço:</label>
+        <input type="text" required name="ender" id="ende" maxlength="200">
+      </div>
+ 
+      <div>
+
+        <label for="city">Sua Cidade:</label>
+        <input type="text"required id="city" name="cidade" id="city">
+      </div>
+
+      <div>
+        <label for="input-Estado">Estado que você mora!</label>
+        <select name="Estado" id="input-Estado"> </select>
+      </div>
+
+      <div>
+        <label for="">Complemento:</label>
+        <input type="radio" required value="casa" id="">Casa
+        <input type="radio" required value="ap" id="">Apartamento
+      </div>
+
+    </fieldset>
+    
+    <br>
+
+    <fieldset id="second">
+      <div>
+        <label for="textA">Resumo do Seu Currículo:</label>
+        <textarea name="ResumoCR" id="textA" cols="30" rows="10"></textarea>
+      </div>
+   
+      <div>
+        <label for="Cargo">Cargo:</label>
+        <input type="text" id="Cargo" required maxlength="40">
+      </div>
+
+      <div>
+        <label for="DScarog">Descrição do Cargo:</label>
+        <input type="textArea" required maxlength="500" id="DScarog">
+      </div>
+
+      <div>    
+        <label for="data">Data de Inc </label>
+        <input type="date" id="data" value="" required>
+      </div>
+
+    </fieldset>
+    <br>
+    <div id="button">
+      <button type="submit">Enviar</button>
+      <button>Apagar</button>
+    </div>
+
+  </form>
+
+
+  <script src="./javascript/script.js" ></script>
+</body>
+</html>
