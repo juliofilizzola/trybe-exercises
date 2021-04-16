@@ -23,3 +23,7 @@ h1 {
 #first, #second {
   background-color: bisque;
 }
+
+.lineContante {
+  margin: 10px;
+}

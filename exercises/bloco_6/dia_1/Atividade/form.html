@@ -11,43 +11,42 @@
   <h1>Currículo</h1>
   <form action="" method="get" id="formu" enctype="multipart/form-data">
     <fieldset id="first">
-      <div>
+      <div class="lineContante">
         <label for="name-completed">Seu nome completo:</label>
-        <input type="text" maxlength="40" required id="name-completed">
+        <input type="text" maxlength="40" name="Name-Complete" required id="name-completed" autocomplete="off">
       </div>
       
 
-      <div>
+      <div class="lineContante">
         <label for="e-mai">Seu E-Mail:</label>
-        <input type="email" maxlength="50" required id="e-mai">
+        <input type="email" name="Email" maxlength="50" required id="e-mai" autocomplete="off">
       </div>
       
-      <div>
+      <div class="lineContante">
         <label for="CPF">Seu CPF:</label>
-        <input type="text" name="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}" min="1" max="14" 
-        title="Digite um CPF no formato: xxx.xxx.xxx-xx" required id="CPF">
+        <input type="text" name="CPF" pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"  maxlength="14" 
+        title="Digite um CPF no formato: xxx.xxx.xxx-xx" required id="CPF" autocomplete="off">
       </div>
 
-      <div>
+      <div class="lineContante">
         <label for="ende">Seu Endereço:</label>
-        <input type="text" required name="ender" id="ende" maxlength="200">
+        <input type="text" required name="Endereço" id="ende" maxlength="200" autocomplete="off">
       </div>
  
-      <div>
-
+      <div class="lineContante">
         <label for="city">Sua Cidade:</label>
-        <input type="text"required id="city" name="cidade" id="city">
+        <input type="text"required id="city" name="cidade" id="city" autocomplete="off">
       </div>
 
-      <div>
+      <div class="lineContante">
         <label for="input-Estado">Estado que você mora!</label>
         <select name="Estado" id="input-Estado"> </select>
       </div>
 
-      <div>
+      <div class="lineContante">
         <label for="">Complemento:</label>
-        <input type="radio" required value="casa" id="">Casa
-        <input type="radio" required value="ap" id="">Apartamento
+        <input type="radio" required value="casa" id="CasaComple">Casa
+        <input type="radio" required value="ap" id="APComple">Apartamento
       </div>
 
     </fieldset>
@@ -55,31 +54,32 @@
     <br>
 
     <fieldset id="second">
-      <div>
+      <div class="lineContante">
         <label for="textA">Resumo do Seu Currículo:</label>
-        <textarea name="ResumoCR" id="textA" cols="30" rows="10"></textarea>
+        <br>
+        <textarea name="ResumoCR" name="Resumo" id="textA" cols="30" rows="10"></textarea>
       </div>
    
-      <div>
+      <div class="lineContante">
         <label for="Cargo">Cargo:</label>
-        <input type="text" id="Cargo" required maxlength="40">
+        <input type="text" name="Cargo" id="Cargo" required maxlength="40" autocomplete="off">
       </div>
 
-      <div>
+      <div class="lineContante">
         <label for="DScarog">Descrição do Cargo:</label>
-        <input type="textArea" required maxlength="500" id="DScarog">
+        <input type="textArea" name="Descrição" required maxlength="500" id="DScarog" autocomplete="off">
       </div>
 
-      <div>    
+      <div class="lineContante">    
         <label for="data">Data de Inc </label>
-        <input type="date" id="data" value="" required>
+        <input type="date" id="data" value="" required autocomplete="off">
       </div>
 
     </fieldset>
     <br>
     <div id="button">
-      <button type="submit">Enviar</button>
-      <button>Apagar</button>
+      <button id="enviar" type="submit">Enviar</button>
+      <button id="delete">Apagar</button>
     </div>
 
   </form>
