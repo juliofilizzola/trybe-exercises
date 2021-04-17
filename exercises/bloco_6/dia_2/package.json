@@ -53,8 +53,6 @@
     "semantic-release": "^15.13.3"
   },
   "dependencies": {
-    "moment": "^2.29.1",
-    "pikaday": "^1.8.2",
     "promise-polyfill": "^6.0.2"
   }
 }
