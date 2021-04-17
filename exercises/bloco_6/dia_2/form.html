@@ -86,17 +86,26 @@
 
         <div class="mb-3">
           <label for="input-Estado" class="form-label">Estado que você mora:</label>
-          <select name="Estado" class="form-select-lg mb-3" id="input-Estado"></select>
+          <select name="Estado" class="form-select" id="input-Estado"></select>
         </div>
 
         <div class="mb-3 form-check">
-          <label for="" class="form-label">Complemento:</label>
-          <input type="radio" required value="casa" id="CasaComple" />Casa
-          <input type="radio" required value="ap" id="APComple" />Apartamento
+          <p class="form-label">Completo:</p>
+          <input class="form-check-input" type="radio" name="completo" id="home">
+          <label class="form-check-label" for="home">
+            Casa
+          </label>
+        </div>
+        <div class="form-check">
+          <input class="form-check-input" type="radio" name="completo" id="AP">
+          <label class="form-check-label" for="AP">
+            Apartamento
+          </label>
+          
         </div>
       </fieldset>
+      
 
-      <br />
 
       <fieldset id="second">
         <div class="mb-3">
