@@ -178,6 +178,3 @@ new JustValidate(".js-form", {
   },
 });
 
-window.onload = function () {
-  createStateOptions();
-};
