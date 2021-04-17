@@ -10,42 +10,46 @@
       rel="stylesheet"
       href="bootstrap-5.0.0-beta3-dist/css/bootstrap.min.css"
     />
+    <link rel="stylesheet" href="./bootstrap-5.0.0-beta3-dist/css/CSS2/styler.css">
     <title>New Currículo</title>
   </head>
   <body>
-    <h1 class="text-center py-2">Currículo</h1>
+    <h1 class="text-center fs-1">Currículo</h1>
     <form action="" method="get" id="formu" class="js-form row" enctype="multipart/form-data">
-      <fieldset  id="first">
+      <fieldset>
         <div class="mb-3">
-          <label for="name-completed">Seu nome completo:</label>
+          <label for="name-completed" class="form-label">Seu nome completo:</label>
           <input
             type="text"
             maxlength="40"
             name="Name-Complete"
             required
+            class="form-control"
             id="name-completed"
             autocomplete="off"
           />
         </div>
 
         <div class="mb-3">
-          <label for="e-mai">Seu E-Mail:</label>
+          <label for="e-mai" class="form-label">Seu E-Mail:</label>
           <input
             type="email"
             name="Email"
             maxlength="50"
             required
+            class="form-control"
             id="e-mai"
             autocomplete="off"
           />
         </div>
 
         <div class="mb-3">
-          <label for="CPF">Seu CPF:</label>
+          <label for="CPF" class="form-label">Seu CPF:</label>
           <input
             type="text"
             name="CPF"
             pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
+            class="form-control"
             maxlength="14"
             title="Digite um CPF no formato: xxx.xxx.xxx-xx"
             required
@@ -55,11 +59,12 @@
         </div>
 
         <div class="mb-3">
-          <label for="ende">Seu Endereço:</label>
+          <label for="ende" class="form-label">Seu Endereço:</label>
           <input
             type="text"
             required
             name="Endereço"
+            class="form-control"
             id="ende"
             maxlength="200"
             autocomplete="off"
@@ -67,10 +72,11 @@
         </div>
 
         <div class="mb-3">
-          <label for="city">Sua Cidade:</label>
+          <label for="city" class="form-label">Sua Cidade:</label>
           <input
             type="text"
             required
+            class="form-control"
             id="city"
             name="cidade"
             id="city"
@@ -79,12 +85,12 @@
         </div>
 
         <div class="mb-3">
-          <label for="input-Estado">Estado que você mora!</label>
-          <select name="Estado" id="input-Estado"></select>
+          <label for="input-Estado" class="form-label">Estado que você mora:</label>
+          <select name="Estado" class="form-select-lg mb-3" id="input-Estado"></select>
         </div>
 
         <div class="mb-3 form-check">
-          <label for="">Complemento:</label>
+          <label for="" class="form-label">Complemento:</label>
           <input type="radio" required value="casa" id="CasaComple" />Casa
           <input type="radio" required value="ap" id="APComple" />Apartamento
         </div>
@@ -94,9 +100,10 @@
 
       <fieldset id="second">
         <div class="mb-3">
-          <label for="textA">Resumo do Seu Currículo:</label>
+          <label for="textA" class="form-label">Resumo do Seu Currículo:</label>
           <br />
           <textarea
+            class="form-control"
             name="ResumoCR"
             name="Resumo"
             id="textA"
@@ -108,6 +115,7 @@
         <div class="mb-3">
           <label for="Cargo">Cargo:</label>
           <input
+            class="form-control"
             type="text"
             name="Cargo"
             id="Cargo"
@@ -120,6 +128,7 @@
         <div class="mb-3">
           <label for="DScarog">Descrição do Cargo:</label>
           <input
+            class="form-control"
             type="textArea"
             name="Descrição"
             required
@@ -131,13 +140,15 @@
 
         <div class="mb-3">
           <label class="form-label" for="data">Data de Inc </label>
-          <input type="date" id="data" value="" required autocomplete="off" />
+          <input type="date" 
+          class="form-control"id="data" value="" required autocomplete="off" />
         </div>
       </fieldset>
       <br />
       <div class="btn">
-        <button id="enviar" type="submit">Enviar</button>
-        <button id="delete">Apagar</button>
+
+        <button id="enviar" class="btn btn-primary" type="submit">Enviar</button>
+        <button id="delete" class="btn btn-danger" >Apagar</button>
       </div>
     </form>
 
