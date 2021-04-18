@@ -83,7 +83,7 @@ function clearAll() {
 
 del.addEventListener("click", clearAll);
 
-new JustValidate(".js-form", {
+new window.JustValidate(".js-form", {
   rules: {
     name: {
       required: true,
