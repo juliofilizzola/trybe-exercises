@@ -57,20 +57,20 @@ const dataInput = document.querySelector("#data");
 
 const enviar = document.querySelector("#enviar");
 
-function save(event) {
-  event.preventDefault();
-  localStorage.setItem("Email", emailInput.value);
-  localStorage.setItem("CPF", cpfInput.value);
-  localStorage.setItem("endereço", enderecoInput.value);
-  localStorage.setItem("Cidade", cityInput.value);
-  localStorage.setItem("Estado", stadeInput.value);
-  localStorage.setItem("Resumo do CV", resumoInput.value);
-  localStorage.setItem("Cargo", cargoInput.value);
-  localStorage.setItem("Descrição do Cargo", DcargoInput.value);
-  localStorage.setItem("Data", dataInput.value);
-}
+// function save(event) {
+//   event.preventDefault();
+//   localStorage.setItem("Email", emailInput.value);
+//   localStorage.setItem("CPF", cpfInput.value);
+//   localStorage.setItem("endereço", enderecoInput.value);
+//   localStorage.setItem("Cidade", cityInput.value);
+//   localStorage.setItem("Estado", stadeInput.value);
+//   localStorage.setItem("Resumo do CV", resumoInput.value);
+//   localStorage.setItem("Cargo", cargoInput.value);
+//   localStorage.setItem("Descrição do Cargo", DcargoInput.value);
+//   localStorage.setItem("Data", dataInput.value);
+// }
 
-enviar.addEventListener("click", save);
+// enviar.addEventListener("click", save);
 
 function clearAll() {
   const formElements = document.querySelectorAll("input");
@@ -83,7 +83,7 @@ function clearAll() {
 
 del.addEventListener("click", clearAll);
 
-new window.JustValidate(".js-form", {
+new JustValidate(".js-form", {
   rules: {
     name: {
       required: true,
@@ -172,9 +172,6 @@ new window.JustValidate(".js-form", {
     date: {
       required: "Este campo é obrigatório.",
     },
-  },
-  submitHandler: function (form, values) {
-    console.log(form, values);
-  },
+  }
 });
 

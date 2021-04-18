@@ -1,8 +1,0 @@
-{
-  "dependencies": {
-    "jQuery": "^1.7.4",
-    "just-validate": "^1.5.0",
-    "moment": "^2.29.1",
-    "pikaday": "^1.8.2"
-  }
-}
