@@ -16,11 +16,12 @@
   </head>
   <body>
     <h1 class="text-center fs-1">Currículo</h1>
-    <form action="" method="get" id="formu" class="js-form row" enctype="multipart/form-data">
+    <form action="" method="get" id="formu" class="js-form" enctype="multipart/form-data">
       <fieldset>
         <div class="mb-3">
           <label for="name-completed" class="form-label">Seu nome completo:</label>
           <input
+            data-validate-field="name"
             type="text"
             maxlength="40"
             name="Name-Complete"
@@ -34,6 +35,7 @@
         <div class="mb-3">
           <label for="e-mai" class="form-label">Seu E-Mail:</label>
           <input
+            data-validate-field="email"
             type="email"
             name="Email"
             maxlength="50"
@@ -48,6 +50,7 @@
           <label for="CPF" class="form-label">Seu CPF:</label>
           <input
             type="text"
+            data-validate-field="cpf"
             name="CPF"
             pattern="\d{3}\.\d{3}\.\d{3}-\d{2}"
             class="form-control"
@@ -64,6 +67,7 @@
           <input
             type="text"
             required
+            data-validate-field="address"
             name="Endereço"
             class="form-control"
             id="ende"
@@ -77,6 +81,7 @@
           <input
             type="text"
             required
+            data-validate-field="city"
             class="form-control"
             id="city"
             name="cidade"
@@ -163,7 +168,7 @@
     </form>
 
     
-    <script src="/node_modules/moment/moment.js"></script>
+    <script src="node_modules/moment/moment.js"></script>
     <script src="./node_modules/pikaday/pikaday.js"></script>
     <script src="node_modules/just-validate/dist/js/just-validate.min.js"></script>
     <script src="script.js"></script>
