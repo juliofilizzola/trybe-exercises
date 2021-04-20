@@ -18,21 +18,21 @@
   background-color: #FBD26A;
   display: flex;
   /* Altere a propriedade shrink. */
-  flex-shrink: 1;
+  flex-shrink: 5;
 }
 
 .two {
   background-color: #FAA488;
   display: flex;
   /* Altere a propriedade shrink. */
-  flex-shrink: 1;
+  flex-shrink: 3;
 }
 
 .three {
   background-color: #9069EF;
   display: flex;
   /* Altere a propriedade shrink. */
-  flex-shrink: 1;
+  flex-shrink: 2;
 }
 
 .four {
