@@ -17,7 +17,7 @@
   background-color: #FBD26A;
   display: flex;
   /* Altere a propriedade order. */
-  order: 1;
+  order: 5;
 }
 
 .two {
@@ -31,12 +31,12 @@
   background-color: #9069EF;
   display: flex;
   /* Altere a propriedade order. */
-  order: 3;
+  order: 1;
 }
 
 .four {
   background-color: #006472;
   display: flex;
   /* Altere a propriedade order. */
-  order: 4;
+  order: 2;
 }
