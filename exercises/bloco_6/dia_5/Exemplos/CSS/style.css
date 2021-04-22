@@ -64,6 +64,7 @@ p strong {
 
 .card:nth-of-type(3) {
   background-color: #41197f;
+  
 }
 
 @media screen and (min-width: 500px) {
@@ -73,4 +74,19 @@ p strong {
     display: flex;
   }
 
+}
+
+@media screen and (min-width: 600px) and (max-width: 1000px) {
+  .card:nth-of-type(2) {
+    background-color: chartreuse;
+    color: black;
+    display: flex;
+  }
+}
+
+/* @media not all and (min-device-width: 650px) and (max-device-width: 950px) { */
+  @media not all and (min-width: 650px), not all and (max-width: 950px) {
+  .card:nth-of-type(3) {
+    display: flex;
+  }
 }
