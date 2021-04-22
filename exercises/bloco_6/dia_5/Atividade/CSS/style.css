@@ -1,0 +1,28 @@
+
+
+@media screen {
+  
+
+body {
+font-size: 20px;
+margin: 15px;
+}
+h1 {
+font-size: 18px;
+
+}
+h2 {
+text-align: center;
+}
+
+img {
+    max-width: 100%;
+}
+
+figure {
+    margin: 10px;
+}
+
+}
+
+

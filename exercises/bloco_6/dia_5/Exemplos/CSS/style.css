@@ -73,6 +73,9 @@ p strong {
     color: black;
     display: flex;
   }
+  body p:nth-child(5) {
+    background-color: black;
+  }
 
 }
 
@@ -84,8 +87,7 @@ p strong {
   }
 }
 
-/* @media not all and (min-device-width: 650px) and (max-device-width: 950px) { */
-  @media not all and (min-width: 650px), not all and (max-width: 950px) {
+@media not all and (min-width: 650px), not all and (max-width: 950px) {
   .card:nth-of-type(3) {
     display: flex;
   }
