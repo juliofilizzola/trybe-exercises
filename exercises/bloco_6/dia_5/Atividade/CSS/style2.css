@@ -10,10 +10,120 @@ body {
 
 @media screen and (max-width: 600px) {
   body {
-    padding: 5px;
-    margin: 0 auto;
+    background-color: beige;
   }
 
+  header {
+    background-color: black;
+    color: white;
+    padding: 20px;
+    margin: 0;
+    font-size: 15px;
+  }
+
+  .aside-one, .aside-two {
+    margin: 0 15px;
+  }
+
+  .main-content p {
+    margin: 0 15px;
+    font-size: 15px;
+  }
+
+  .main-content h1 {
+    margin: 0 15px;
+    font-size: 25px;
+    padding: 5px;
+  }
+
+  footer {
+    color: white;
+    padding: 20px;
+    margin-top: 15px;
+    font-size: 15px;
+    background-color: black;
+    width: 100%;
+  }
+
+}
+
+/* Tela mediana */
+
+
+@media screen and (max-width: 800px) {
+  body {
+    background-color: beige;
+  }
+
+  header {
+    background-color: black;
+    color: white;
+    padding: 15px;
+    margin: 0;
+    font-size: 20px;
+  }
+
+  .aside-one, .aside-two {
+    margin: 0 30px;
+  }
+
+  .main-content p {
+    margin: 0 30px;
+    font-size: 20px;
+  }
+
+  .main-content h1 {
+    margin: 0 35px;
+    font-size: 30px;
+    padding: 5px;
+  }
+
+  footer {
+    color: white;
+    padding: 30px;
+    margin-top: 20px;
+    font-size: 20px;
+    background-color: black;
+    width: 100%;
+  }
+
+}
+
+@media screen and (min-width: 800px) {
   
-  
+  body {
+    background-color: beige;
+  }
+
+  header {
+    background-color: black;
+    color: white;
+    padding: 25px;
+    margin: 0;
+    font-size: 25px;
+  }
+
+  .aside-one, .aside-two {
+    margin: 0 40px;
+  }
+
+  .main-content p {
+    margin: 0 40px;
+    font-size: 25px;
+  }
+
+  .main-content h1 {
+    margin: 0 35px 15px;
+    font-size: 35px;
+    padding: 5px;
+  }
+
+  footer {
+    color: white;
+    padding: 30px;
+    margin-top: 30px;
+    font-size: 25px;
+    background-color: black;
+    width: 100%;
+  }
 }
