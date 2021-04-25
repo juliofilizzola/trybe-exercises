@@ -1,0 +1,19 @@
+body {
+  box-sizing: border-box;
+}
+*, *:before, *:after {
+  box-sizing: inherit;
+}
+
+
+/* Telas menores */ 
+
+@media screen and (max-width: 600px) {
+  body {
+    padding: 5px;
+    margin: 0 auto;
+  }
+
+  
+  
+}
