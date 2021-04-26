@@ -32,8 +32,12 @@ console.log(word("Antonio foi no banheiro e não xaasasdasdblausabemosee o que a
 
 // atividade 4
 
-let fraseTrybe = 'Trybe x aqui!'
+let fraseTrybe = 'Trybe x aqui!';
+let skills = ['Git', 'HTML', 'CSS'];
 
 const toReplace = string => string.replace(/x/i, 'Xablau');
 
 console.log(toReplace(fraseTrybe));
+
+const concat = string => `${toReplace(fraseTrybe)}Minhas cinco principais habilidades são: ${string.toString()}`;
+console.log(concat(skills))
