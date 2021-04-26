@@ -34,10 +34,6 @@ console.log(word("Antonio foi no banheiro e não xaasasdasdblausabemosee o que a
 
 let fraseTrybe = 'Trybe x aqui!'
 
-const toReplace = string => {
-  let word = string;
-  let newWord = word.replace(/x/i, 'Bebeto');
-  return newWord;
-}
+const toReplace = string => string.replace(/x/i, 'Xablau');
 
 console.log(toReplace(fraseTrybe));
