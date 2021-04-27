@@ -56,3 +56,15 @@ console.log(valueOb(lesson3));
 const clone = () => Object.assign({}, {lesson1, lesson2, lesson3});
 
 console.log(clone());
+
+const getNumber = (obj) => {
+  let total = 0;
+  const array = Object.keys(obj);
+  for (let index in array) {
+    total += obj[array[index]].numeroEstudantes;
+  }
+  return total;
+}
+
+console.log(getNumber(clone()));
+
