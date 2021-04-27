@@ -1,23 +1,23 @@
 const customer = {
-  firstName: 'Roberto',
+  firstName: "Roberto",
   age: 22,
-  job: 'Teacher',
+  job: "Teacher",
 };
 
-customer.lastname = 'Xablau';
+customer.lastname = "Xablau";
 
 console.log(customer);
 
 const customer = {
-  firstName: 'Roberto',
+  firstName: "Roberto",
   age: 22,
-  job: 'Teacher',
+  job: "Teacher",
 };
 
-let newKey = 'lastName';
-const lastName = 'Ferreira';
+let newKey = "lastName";
+const lastName = "Ferreira";
 customer[newKey] = lastName;
-newKey = 'fullName';
+newKey = "fullName";
 const fullName = `${customer.firstName} ${customer.lastName}`;
 customer[newKey] = fullName;
 console.log(customer);
@@ -25,15 +25,13 @@ console.log(customer);
 // atividade de fixação
 
 const car = {
-  marca: 'Fiat',
-  pais : 'Italia'
+  marca: "Fiat",
+  pais: "Italia",
 };
 
-const addObject = (ob, key, val) => {
-  ob.key = val;
+const addObject = (ob, op, val) => {
+  ob[op] = val;
   return car;
-}
+};
 
-
-console.log(addObject(car, 'modelo', 'Palio'));
-
+console.log(addObject(car, "Modelo", "Palio"));
