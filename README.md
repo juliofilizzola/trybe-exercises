@@ -17,5 +17,7 @@ Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas 
 4. Introdução a o JavaScript.
 5. Dom e Seus Seletores.
 6. Web Storage.
+7. HTML & CSS (Forms, Flexbox e Responsivo)
+
 
 Caso queira me ajudar, pode fazer um CD nos pull requests que tiver, ficarei bastante contente com sua ajuda.
