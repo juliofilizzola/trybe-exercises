@@ -29,11 +29,16 @@ console.log(setTurn(lesson2, 'turno', 'manha'));
 
 //segunda atividade 
 
-console.log('----------------------')
+const setKeys = ob => Object.keys(ob);
 
-const setKeys = (ob) => Object.keys(ob);
-
-console.log(setKeys(lesson));
+console.log(setKeys(lesson1));
 console.log(setKeys(lesson2));
-console.log(setKeys(lesson));
+console.log(setKeys(lesson3));
 
+//terceira atividade
+
+const lengthObjs = ob => Object.keys(ob).length;
+
+console.log(lengthObjs(lesson1));
+console.log(lengthObjs(lesson2));
+console.log(lengthObjs(lesson3));
