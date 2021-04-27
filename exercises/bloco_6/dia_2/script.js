@@ -173,8 +173,8 @@ new JustValidate(".js-form", {
       required: "Este campo é obrigatório.",
     },
   },
-  submitHandler: function (form, values) {
-    console.log(form, values);
+ submitHandler: function (form, values) {
+ console.log(form, values);
   }
 });
 
