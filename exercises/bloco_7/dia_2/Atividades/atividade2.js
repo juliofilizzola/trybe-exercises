@@ -57,6 +57,7 @@ const clone = () => Object.assign({}, {lesson1, lesson2, lesson3});
 
 console.log(clone());
 
+// Sexta Atividade
 const getNumber = (obj) => {
   let total = 0;
   const array = Object.keys(obj);
@@ -67,4 +68,10 @@ const getNumber = (obj) => {
 }
 
 console.log(getNumber(clone()));
+
+//Setima Atividade
+
+const getValuerN = (obj, number) => Object.values(obj)[number];
+
+console.log(getValuerN(lesson1, 1));
 
