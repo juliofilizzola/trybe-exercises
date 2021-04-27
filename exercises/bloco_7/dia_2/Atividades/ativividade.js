@@ -33,6 +33,8 @@ const order = {
     total: 60,
   },
 };
+const lastName = Carlos
+console.log(order['lastName'])
 
 const customerInfo = (order) => {
   // Adicione abaixo as informações necessárias.

@@ -42,3 +42,11 @@ const lengthObjs = ob => Object.keys(ob).length;
 console.log(lengthObjs(lesson1));
 console.log(lengthObjs(lesson2));
 console.log(lengthObjs(lesson3));
+
+//Quarta Atividade
+
+const valueOb = ob => Object.values(ob);
+
+console.log(valueOb(lesson1));
+console.log(valueOb(lesson2));
+console.log(valueOb(lesson3));
