@@ -26,6 +26,7 @@ console.log(customer);
 
 const car = {
   marca: 'Fiat',
+  pais : 'Italia'
 };
 
 const addObject = (ob, key, val) => {
