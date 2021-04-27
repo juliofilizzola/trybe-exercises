@@ -50,3 +50,9 @@ const valueOb = ob => Object.values(ob);
 console.log(valueOb(lesson1));
 console.log(valueOb(lesson2));
 console.log(valueOb(lesson3));
+
+// Quinta Atividade
+
+const clone = () => Object.assign({}, {lesson1, lesson2, lesson3});
+
+console.log(clone());
