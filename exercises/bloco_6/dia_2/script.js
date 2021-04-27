@@ -148,7 +148,7 @@ new JustValidate(".js-form", {
       maxLength: "O limite é de 200 caracteres.",
     },
     city: {
-      required: "O campo cidade é obrigatório.",
+      required: "O campo cidade é Xablau.",
       maxLength: "O limite é de 28 caracteres.",
     },
     state: {
@@ -172,6 +172,9 @@ new JustValidate(".js-form", {
     date: {
       required: "Este campo é obrigatório.",
     },
+  },
+  submitHandler: function (form, values) {
+    console.log(form, values);
   }
 });
 
