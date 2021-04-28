@@ -17,3 +17,4 @@ assert.strictEqual(sum(0, 0), 0);
 //
 assert.throws(() => {sum(4, "5");}, /^ Error: parameters must be numbers*/);
 
+
