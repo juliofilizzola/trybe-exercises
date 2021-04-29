@@ -21,3 +21,4 @@ assert.strictEqual(division(10, 2), 5); // OK
 assert.throws(() => { division(10, 8); }); // OK
 
 // console.log(division(10, 0))
+
