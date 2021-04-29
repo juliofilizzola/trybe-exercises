@@ -13,11 +13,11 @@ const assert = require('assert');
 
 
 function division(x, y) {
-if (y === 0) throw new Error('Xablau')
-return x / y;
+  if (y === 0) throw new Error('xablau');
+  return x / y;
 }
 
 assert.strictEqual(division(10, 2), 5); // OK
-assert.throws(() => { division(10, 2); }); // OK 
+assert.throws(() => { division(10, 8); }); // OK
 
 // console.log(division(10, 0))
