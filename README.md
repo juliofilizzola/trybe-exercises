@@ -11,12 +11,15 @@ Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas 
 
 ### O que eu já aprendi.
 
-1 - Git e Github.
-2 - Conceito de HTML e Semantica.
-3 - CSS e Box Model.
-4 - Introdução a o JavaScript.
-5 - Dom e Seus Seletores.
-6 - Web Storage.
-7 - HTML & CSS (Forms, Flexbox e Responsivo)
+1. Git e Github.
+2.  Conceito de HTML e Semantica.
+3. CSS e Box Model.
+4. Introdução a o JavaScript.
+5. Dom e Seus Seletores.
+6. Web Storage.
+7. HTML & CSS (Forms, Flexbox e Responsivo).
+8. Intro a JavaScript ES6 e Teste Unitários.
+
+
 
 Caso queira me ajudar, pode fazer um CD nos pull requests que tiver, ficarei bastante contente com sua ajuda.
