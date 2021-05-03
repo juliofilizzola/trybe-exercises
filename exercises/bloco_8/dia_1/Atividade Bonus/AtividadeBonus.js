@@ -20,9 +20,9 @@ const dragon = {
 
 const battleMembers = { mage, warrior, dragon };
 
-const danoDragon = () =>  Math.floor(Math.random() * (dragon.strength + 15));
+const danoDragon = () => Math.floor(Math.random() * (dragon.strength + 15));
 
-const calDano = () => Math.floor(Math.random()* ((warrior.strength * warrior.weaponDmg) - warrior.strength) + warrior.strength );
+const calDano = () => Math.floor(Math.random() * ((warrior.strength * warrior.weaponDmg) - warrior.strength) + warrior.strength );
 
 console.log(calDano());
 console.log(danoDragon());
