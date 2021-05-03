@@ -5,6 +5,12 @@ arrayOfValues.forEach((element, indexOfTheArray, theEntireArray) => {
   console.log('Array percorrido:', theEntireArray);
 });
 // Aqui mostra cada elemento da array que ele percorreu. 
+// o forEach tem pode receber 3 paramentros que cada um reflete á: 
+// o item do array
+//a possição do array 
+// o array completo. 
+
+
 // => ---------------
 //   Cada elemento do array: josé
 //   Index, posição do elemento: 0
