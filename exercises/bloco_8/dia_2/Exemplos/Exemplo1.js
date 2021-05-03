@@ -18,3 +18,7 @@ meuArray.forEach((elemento) => {
     console.log(`${elemento} Não é divísivel por 2!`);
   }
 });
+
+meuArray.find(element => {
+  if(element % 7 === 0) console.log(`${element} é XABLAU`);
+});
