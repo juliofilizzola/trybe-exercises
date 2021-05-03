@@ -20,6 +20,5 @@ const dragon = {
 
 const battleMembers = { mage, warrior, dragon };
 
-const dano = () => {
-  
-}
+const danoDragon = () =>  15 + Math.ceil(Math.random() * (dragon.strength + 15));
+
