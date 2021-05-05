@@ -8,8 +8,6 @@ const studentAverage = () => {
     name: stud,
     average: (grades[index].reduce((acc, value) => acc + value, 0)/ grades[index].length)
   }));
-  // grades.reduce((acc, numb) => acc + (numb -numb)/ grades.length)
-  // escreva seu código aqui
 }
 console.log(studentAverage());
 const expected = [
