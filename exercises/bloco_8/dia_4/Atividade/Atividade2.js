@@ -1,3 +1,4 @@
+
 const assert = require('assert');
 
 const books = [
@@ -62,32 +63,13 @@ const books = [
     releaseYear: 1928,
   },
 ];
+const reduceNamesAuthor = (acc, book, index, array) => {
+  if (index === array.length - 1) `${acc} ${book.author.name}.`;
+  return `${acc} ${book.author.name},`;
+}
 
-const expectedResult = [
-  {
-    id: 6,
-    name: 'O Chamado de Cthulhu',
-    genre: 'Terror',
-    author: { name: 'H. P. Lovecraft', birthYear: 1890 },
-    releaseYear: 1928,
-  },
-  {
-    id: 3,
-    name: 'Fundação',
-    genre: 'Ficção Científica',
-    author: { name: 'Isaac Asimov', birthYear: 1920 },
-    releaseYear: 1951,
-  },
-  {
-    id: 2,
-    name: 'O Senhor dos Anéis',
-    genre: 'Fantasia',
-    author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
-    releaseYear: 1954,
-  },
-];
+const allNames = () => books.reduce(reduceNamesAuthor, 'Nomes:');
 
-const oldBooks = () => books.filter((book) => (book.releaseYear < 1961)).sort((a,b)=> a.releaseYear - b.releaseYear);
+console.log(allNames());
 
-console.log(oldBooks());
-// assert.deepStrictEqual(oldBooks(), expectedResult);
+// assert.deepStrictEqual(allNames(), 'Nomes: George R. R. Martin, J. R. R. Tolkien, Isaac Asimov, Frank Herbert, Stephen King, H. P. Lovecraft.');
