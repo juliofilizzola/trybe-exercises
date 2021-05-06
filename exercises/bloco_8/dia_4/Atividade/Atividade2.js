@@ -63,12 +63,11 @@ const books = [
     releaseYear: 1928,
   },
 ];
-const reduceNamesAuthor = (acc, book, index, array) => {
+
+const allNames = () => books.reduce((acc, book, index, array) => {
   if (index === array.length - 1) `${acc} ${book.author.name}.`;
   return `${acc} ${book.author.name},`;
-}
-
-const allNames = () => books.reduce(reduceNamesAuthor, 'Nomes:');
+}, 'Nomes:');
 
 console.log(allNames());
 
