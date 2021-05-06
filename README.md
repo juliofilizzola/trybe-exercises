@@ -1,5 +1,5 @@
 
-# Olá, esse é o meu Repositório de atividades, ao quais eu vou fazer ao longo do curso da Trybe.
+# Olá, esse é o meu Repositório de atividades, ao quais eu vou fazer ao longo do curso da Trybe.✌
 
 ![codigo](https://d11wkw82a69pyn.cloudfront.net/siteassets/images/r20/r20_21_05_2019_1440x450_low.jpg)
 
@@ -11,16 +11,14 @@ Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas 
 
 ### O que eu já aprendi.
 
-1. Git e Github.
-2.  Conceito de HTML e Semantica.
-3. CSS e Box Model.
-4. Introdução a o JavaScript.
-5. Dom e Seus Seletores.
-6. Web Storage.
-7. HTML & CSS (Forms, Flexbox e Responsivo).
-8. Intro a JavaScript ES6 e Teste Unitários.
-
-
+- 1- Git e Github.
+- 2- Conceito de HTML e Semantica.
+- 3- CSS e Box Model.
+- 4- Introdução a o JavaScript.
+- 5- Dom e Seus Seletores.
+- 6- Web Storage.
+- 7- HTML & CSS (Forms, Flexbox e Responsivo)
+- 8- HOF:  forEach, find, some, every, sort, map, filter reduce, spread operator, parametro rest, destructuring e mais.s
 
 
 Caso queira me ajudar, pode fazer um CD nos pull requests que tiver, ficarei bastante contente com sua ajuda.

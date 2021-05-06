@@ -34,7 +34,6 @@ const books = [
   {
     id: 4,
     name: 'Duna',
-    genre: 'Ficção Científica',
     author: {
       name: 'Frank Herbert',
       birthYear: 1920,
@@ -63,31 +62,19 @@ const books = [
   },
 ];
 
-const expectedResult = [
-  {
-    id: 6,
-    name: 'O Chamado de Cthulhu',
-    genre: 'Terror',
-    author: { name: 'H. P. Lovecraft', birthYear: 1890 },
-    releaseYear: 1928,
+const expectedResult = {
+  author: {
+    birthYear: 1948,
+    name: 'George R. R. Martin',
   },
-  {
-    id: 3,
-    name: 'Fundação',
-    genre: 'Ficção Científica',
-    author: { name: 'Isaac Asimov', birthYear: 1920 },
-    releaseYear: 1951,
-  },
-  {
-    id: 2,
-    name: 'O Senhor dos Anéis',
-    genre: 'Fantasia',
-    author: { name: 'J. R. R. Tolkien', birthYear: 1892 },
-    releaseYear: 1954,
-  },
-];
+  genre: 'Fantasia',
+  id: 1,
+  name: 'As Crônicas de Gelo e Fogo',
+  releaseYear: 1991,
+};
 
-const oldBooks = () => books.filter((book) => (book.releaseYear < 1961)).sort((a,b)=> a.releaseYear - b.releaseYear);
+const longestNamedBook = () => books.reduce((book, value) => value.name.length > book.name.length ? value : book);
 
-console.log(oldBooks());
-// assert.deepStrictEqual(oldBooks(), expectedResult);
+console.log(longestNamedBook());
+
+assert.deepStrictEqual(longestNamedBook(), expectedResult);
