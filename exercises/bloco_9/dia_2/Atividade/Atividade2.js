@@ -17,3 +17,5 @@ const promises = () => {
 }
 
 promises();
+
+// feito baseado no vídeo do gabarito;
