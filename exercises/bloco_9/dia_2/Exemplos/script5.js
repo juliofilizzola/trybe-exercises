@@ -13,10 +13,10 @@ function verifiedFetch(url) {
 }
 
 function sendJokeToFriend(name) {
-  const message = verifiedFetch('https://api.chucknorris.io/jokes/random?category=dev')
+  const message = verifiedFetch('https://api.chucknorris.io/jokes/random?category=dv')
     .then((joke) => `Oi ${name}, ouve essa: ${joke}`)
     .then((thisjoke) => console.log(thisjoke))
-    .catch((err) => err);
+    .catch((err) => console.log('errou!' + err));
 }
 
 sendJokeToFriend("Anna");

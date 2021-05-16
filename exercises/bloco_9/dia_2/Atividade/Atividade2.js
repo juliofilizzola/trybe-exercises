@@ -8,7 +8,10 @@ const promises = () => {
     const sum =myArray.map(number => number * number)
     .reduce((sum, number) => sum + number);
 
-    sum < 8000 ? resolve(sum) : rejects(sum);
+    if(sum < 8000) {
+      resolve(sum)
+    } 
+    reject(sum);
   });
 
   myPromises

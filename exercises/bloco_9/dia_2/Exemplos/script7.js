@@ -5,7 +5,6 @@ async function verifiedFetch(url) {
     return fetch(url)
       .then((r) => r.json())
       .then((r) => (r.value));
-      .catch 
   }
   throw new Error('endpoint não existe');
 }
