@@ -7,7 +7,7 @@
 
 Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas bem básicas até coisas mais complexas, a medida que adentro ao curso.
 
-*"Estou em plena evolução, como qualquer ser evoluiu de uma criança para adulto."*
+`"Estou em plena evolução, como qualquer ser evoluiu de uma criança para adulto."`
 
 ### O que eu já aprendi.
 
@@ -18,7 +18,8 @@ Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas 
 - 5- Dom e Seus Seletores.
 - 6- Web Storage.
 - 7- HTML & CSS (Forms, Flexbox e Responsivo)
-- 8- HOF:  forEach, find, some, every, sort, map, filter reduce, spread operator, parametro rest, destructuring e mais.s
+- 8- HOF:  forEach, find, some, every, sort, map, filter reduce, spread operator, parametro rest, destructuring e mais.
+- 9- JavaScript Assíncrono e Promises.
 
 
 Caso queira me ajudar, pode fazer um CD nos pull requests que tiver, ficarei bastante contente com sua ajuda.
