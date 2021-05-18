@@ -22,7 +22,7 @@ function decode(array) {
 
 
 
-
 module.exports = {
-  encode,
+  encode, 
+  decode
 }
