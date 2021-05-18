@@ -1,7 +1,5 @@
 const{ encode, decode }= require('../Atividade/Atividade2');
 
-// const decode = require('../Atividade/Atividade2B');
-
 describe( 'Test Encode', () => {
   it('a função encode é definida', () => {
     expect(encode).toBeDefined();
@@ -18,6 +16,9 @@ describe( 'Test Encode', () => {
   it('Encode retorna 3', () => {
     expect(encode('i')).toEqual('3');
   });
+  it('Encode retorna 4', () => {
+    expect(encode('o')).toEqual('4');
+  });
 });
 
 describe( 'Test decode', () => {
@@ -30,10 +31,13 @@ describe( 'Test decode', () => {
   it('Decode retorna a', () => {
     expect(decode('1n1')).toEqual('ana');
   });
-  it('decode retorna e', () => {
+  it('Decode retorna e', () => {
     expect(decode('2')).toEqual('e');
   });
-  it('Encode retorna i', () => {
+  it('Decode retorna i', () => {
     expect(decode('3')).toEqual('i');
+  });
+  it('Decode retorna o', () => {
+    expect(decode('4')).toEqual('o');
   });
 });
