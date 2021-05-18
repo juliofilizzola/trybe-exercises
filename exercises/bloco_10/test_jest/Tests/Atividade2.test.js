@@ -9,8 +9,10 @@ describe( 'Test Encode', () => {
   it('encode é uma função', () => {
     expect(typeof encode).toEqual('function');
   })
+  it('Encode retorna 1n1', () => {
+    expect(encode('ana')).toEqual('1n1')
+  })
 });
-
 
 describe( 'Test decode', () => {
   it('a função Decode é definida', () => {
@@ -18,5 +20,8 @@ describe( 'Test decode', () => {
   });
   it('Decode é uma função', () => {
     expect(typeof decode).toEqual('function');
+  });
+  it('Decode retorna ana', () => {
+    expect(decode('1n1')).toEqual('ana')
   })
 })
