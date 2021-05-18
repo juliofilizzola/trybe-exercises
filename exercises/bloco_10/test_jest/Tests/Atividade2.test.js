@@ -19,6 +19,9 @@ describe( 'Test Encode', () => {
   it('Encode retorna 4', () => {
     expect(encode('o')).toEqual('4');
   });
+  test('Encode retorna 5', () => {
+    expect(encode('u')).toEqual('5')
+  })
 });
 
 describe( 'Test decode', () => {
@@ -40,4 +43,7 @@ describe( 'Test decode', () => {
   it('Decode retorna o', () => {
     expect(decode('4')).toEqual('o');
   });
+  it('Decode Retorna u', () =>{
+    expect(decode('5')).toEqual('u')
+  })
 });
