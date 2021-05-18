@@ -1,4 +1,4 @@
-const{ encode, decode }= require('../Atividade/Atividade2');
+const{ encode, decode } = require('../Atividade/Atividade2');
 
 describe( 'Test Encode', () => {
   it('a função encode é definida', () => {
