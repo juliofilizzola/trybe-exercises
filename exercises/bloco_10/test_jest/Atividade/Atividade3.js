@@ -10,6 +10,4 @@ const techlist = (obj, name) => {
   return technologyList; 
 }
 
-
-
 module.exports = techlist;
