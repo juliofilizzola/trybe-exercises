@@ -49,3 +49,5 @@ const searchEmployee = (ids, detail) => {
 };
 
 console.log(searchEmployee('8579-6', 'lastName'));
+
+module.exports = searchEmployee;
