@@ -21,4 +21,5 @@ Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas 
 - 8- HOF:  forEach, find, some, every, sort, map, filter reduce, spread operator, parametro rest, destructuring e mais.
 - 9- JavaScript Assíncrono e Promises.
 
+
 Caso queira me ajudar, pode fazer um CD nos pull requests que tiver, ficarei bastante contente com sua ajuda.
