@@ -21,6 +21,4 @@ const getListAnimals = (type) => (
   findAnimalsByType(type).then(list => list)
 );
 
-console.log(getListAnimals('cat'))
-
 module.exports = getListAnimals;
