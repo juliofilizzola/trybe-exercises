@@ -4,11 +4,11 @@ const Animals = [
   { name: 'Preguiça', age: 5, type: 'Cat' },
 ];
 
-const findAnimalsByType = (type) => (
+const findAnimalsByType = (name) => (
   new Promise((resolve, reject) => {
     setTimeout(() => {
-      const arrayAnimals = Animals.filter((animal) => animal.type === type);
-      if (arrayAnimals.length !== 0) {
+      const arrayAnimals = Animals.find((animal) => animal.name === name);
+      if (arrayAnimals) {
         return resolve(arrayAnimals);
       };
 
@@ -17,8 +17,9 @@ const findAnimalsByType = (type) => (
   })
 );
 
-const getListAnimals = (type) => (
-  findAnimalsByType(type).then(list => list)
+const getListAnimals = (nome) => (
+  findAnimalsByType(nome).then(list => list)
 );
 
-module.exports = getListAnimals
+
+module.exports = getListAnimals 
