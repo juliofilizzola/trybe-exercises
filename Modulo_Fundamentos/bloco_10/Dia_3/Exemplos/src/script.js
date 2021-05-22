@@ -19,4 +19,4 @@ const divisivelPorDois = () => (retornaNumeroAleatorio() % 2) === 0;
 
 console.log(divisivelPorDois());
 
-module.exports = divisivelPorDois;
+module.exports = {divisivelPorDois};
