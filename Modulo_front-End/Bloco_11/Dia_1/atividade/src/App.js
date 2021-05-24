@@ -1,5 +1,6 @@
 import React from 'react';
 import './App.css';
+import task from './task';
 
 const Task = (value) => {
   return (
@@ -7,11 +8,12 @@ const Task = (value) => {
   );
 }
 
-const tarefas = ['Acordar', 'Tomar café', 'Escovar os dentes', 'Ir trabalhar'];
+
+
 class App extends React.Component {
   render() {
-    return (
-      <ul>{ tarefas.map(tarefa => Task(tarefa)) }</ul>
+    return (  
+      <ul>{task}</ul>
     );
   }
 }
