@@ -1,8 +1,9 @@
 import React from 'react';
 
+
 class Image extends React.Component {
   render() {
-    return <img src={this.props.source} alt={this.props.alternativeText} />;
+    return <img src={this.props.image.source} alt={this.props.image.alternativeText} />;
   }
 }
 
