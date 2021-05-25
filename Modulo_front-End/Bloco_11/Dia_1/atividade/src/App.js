@@ -1,21 +1,14 @@
 import React from 'react';
 import './App.css';
-import task from './task';
+import TodoList from './components/TodoList';
 
-const Task = (value) => {
+
+const App = () => {
   return (
-    <li key={value}>{value}</li>
+    <div className='todo-app'>
+      <TodoList />
+    </div>
   );
-}
-
-
-
-class App extends React.Component {
-  render() {
-    return (  
-      <ul>{task}</ul>
-    );
-  }
 }
 
 export default App;
