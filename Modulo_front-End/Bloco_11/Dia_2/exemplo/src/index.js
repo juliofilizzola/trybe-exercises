@@ -3,11 +3,10 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
-import Image from './Image'
 
 ReactDOM.render(
   <React.StrictMode>
-    <Image/>
+    <App />
   </React.StrictMode>,
   document.getElementById('root')
 );
