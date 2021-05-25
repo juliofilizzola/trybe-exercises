@@ -20,15 +20,16 @@ class Pokemon extends React.Component {
 }
 
 Pokemon.propTypes = {
+  // Aqui criamos itens que vai ser ser requeridos e também o tipo que vai receber
   pokemon: PropTypes.shape({
-    name: PropTypes.string,
-    type: PropTypes.string,
+    name: PropTypes.string, // Name tem que ser String
+    type: PropTypes.string, // Type tem que ser String
     averageWeight: PropTypes.shape({
       measurementUnit: PropTypes.string,
-      value: PropTypes.number
+      value: PropTypes.number // Value tem que ser string
     }),
-    image: PropTypes.string,
-  }).isRequired,
+    image: PropTypes.string, // Image tem que ser String
+  }).isRequired, // Todos são requeridos, ou seja, tem que enviar todos.
 };
 
 export default Pokemon;
