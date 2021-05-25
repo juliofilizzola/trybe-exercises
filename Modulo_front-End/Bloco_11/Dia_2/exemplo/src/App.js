@@ -1,19 +1,6 @@
-// import './App.css';
-
-// function App() {
-  
-  //
-  // }
-  
-  // export default App;
-  
-  // src/App.js
   import React from 'react';
   import Album from './components/Album'
   import Image from './components/Image'
-
-  // src/App.js
-
 class App extends React.Component {
   render() {
     // Declaração do objeto contendo informações do album01
