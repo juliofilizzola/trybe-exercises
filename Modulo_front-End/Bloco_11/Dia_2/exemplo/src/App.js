@@ -45,7 +45,7 @@ class App extends React.Component {
         <Album album={ album02 } />
       </div>
        <div>
-       <Image image={ cat } />
+       <Image im={ cat.source } alt= { cat.alternativeText }/>
     
       </div>
     </div>
