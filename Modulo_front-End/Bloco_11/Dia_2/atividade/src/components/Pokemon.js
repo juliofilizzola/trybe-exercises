@@ -5,9 +5,9 @@ class Pokemon extends Component {
        return (
      <div>
        <div>
-        <h1></h1>
-        <h2></h2>
-        <h3></h3>
+        <h1> {name} </h1>
+        <h2> {type} </h2>
+        <h3> {`Average weight: ${averageWeight.value} ${averageWeight.measurementUnit}`} </h3>
        </div>
        <img src={image} alt={`${name} sprite`} />
      </div>
