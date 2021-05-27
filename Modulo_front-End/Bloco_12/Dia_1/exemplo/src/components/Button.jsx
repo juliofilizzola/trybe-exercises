@@ -38,5 +38,5 @@ class button extends React.Component {
     ) 
   }
 }
-
+// Você NUNCA deve atribuir valores ao estado diretamente com this.state
 export default button;
