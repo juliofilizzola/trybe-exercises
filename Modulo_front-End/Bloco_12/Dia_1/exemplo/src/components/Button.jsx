@@ -14,19 +14,24 @@ class button extends React.Component {
 
   constructor () {
     super()
-    this.handleClick2 = this.handleClick2.bind(this)
+    this.handleClick2 = this.handleClick2.bind(this);
+    this.state = {
+      numerosDeCliques: 0
+    }
   }
 
   handleClick2() {
-    console.log(this);
+    this.setState((estadoBefore, _props) => ({
+      numerosDeCliques: estadoBefore.numerosDeCliques + 1
+    }))
   } 
 
   render() {
-   
+    console.log(this);
     return (
       <>
       <button onClick={handleClick}>Meu botão</button>
-      <button onClick={this.handleClick2}>Meu botão 2</button>
+      <button onClick={this.handleClick2}>{this.state.numerosDeCliques}</button>
       <button onClick={handleClick3}>Meu botão 3</button>
 
       </>
