@@ -33,7 +33,7 @@ export default class extends Component {
               <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
           </label>
          
-          <Input/>
+          <Input value={}/>
         </form>
       </div>
     )
