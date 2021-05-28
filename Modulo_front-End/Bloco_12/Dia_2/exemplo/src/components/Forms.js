@@ -31,11 +31,7 @@ export default class extends Component {
             Diga qual o seu Estado favorito! De React ou do Brasil, você decide! =)
               <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
           </label>
-          <input
-            type="number"
-            name="idade"
-            value={this.state.numeroFavorito} onChange={this.handleChange}
-          />
+         
           <input
             type="checkbox"
             name="vaiComparecer"
