@@ -9,6 +9,8 @@ export default class extends Component {
 
     this.state = {
       estadoFavorito: '',
+      numeroFavorito: 0,
+      vaiComparecer: false,
     };
   }
 
@@ -32,12 +34,12 @@ export default class extends Component {
           <input
             type="number"
             name="idade"
-            value={this.state.estadoFavorito} onChange={this.handleChange}
+            value={this.state.numeroFavorito} onChange={this.handleChange}
           />
           <input
             type="checkbox"
             name="vaiComparecer"
-            value={this.state.estadoFavorito} onChange={this.handleChange}
+            value={this.state.vaiComparecer} onChange={this.handleChange}
           />
         </form>
       </div>
