@@ -1,4 +1,5 @@
 import React, { Component } from 'react'
+import Input from './Input';
 
 
 export default class extends Component {
@@ -32,11 +33,7 @@ export default class extends Component {
               <textarea name="estadoFavorito" value={this.state.estadoFavorito} onChange={this.handleChange} />
           </label>
          
-          <input
-            type="checkbox"
-            name="vaiComparecer"
-            value={this.state.vaiComparecer} onChange={this.handleChange}
-          />
+          <Input/>
         </form>
       </div>
     )
