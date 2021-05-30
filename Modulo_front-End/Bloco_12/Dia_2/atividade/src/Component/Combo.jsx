@@ -6,6 +6,7 @@ export default class Combo extends Component {
 
     return (
       <div>
+        <h3>Seu Estado:</h3>
         <select>
           {state.map((value, index) => <option key={index}>{value}</option>)}
         </select>

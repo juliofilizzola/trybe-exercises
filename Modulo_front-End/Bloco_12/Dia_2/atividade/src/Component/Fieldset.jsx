@@ -9,7 +9,7 @@ export default class Fieldset extends Component {
     return (
       <fieldset>
         <legend>
-           Nome
+          Seus Dados:
         </legend>
         <Input/>
         <Combo state={States} />
