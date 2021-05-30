@@ -6,19 +6,20 @@ export default class Input extends Component {
       <>
       <label>
         Seu Nome: 
-        <input name='name' type="text" placeholder="Nome"/>
+        <input name='name' type="text" placeholder="Nome" required/>
       </label> 
       <label>
         Seu E-mail: 
-        <input name='email' type="text" placeholder="E-Mail"/>
+        <input name='email' type="text" placeholder="E-Mail" required/>
       </label> 
       <label>
         Seu CPF: 
-        <input name='cpf' type="number" placeholder="CPF"/>
+        <input name='cpf' type="number" placeholder="CPF" required/>
       </label>
       <label>
         Seu Endereço: 
-        <input name='endereco' type="text" placeholder="Endereço"/>
+        <input name='endereco' type="text" placeholder="Endereço" 
+        required/>
       </label>
       <label>
         Sua Cidade: 
