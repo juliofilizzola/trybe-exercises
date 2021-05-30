@@ -9,12 +9,18 @@ export default class Form extends Component {
       nome: '',
       idade: 0,
       endereco: '',
+      cpf: '',
+      city: '',
+      estado: '',
+      tipo: '',
 
     }
   }
   render() {
     return (
-      <Fieldset/>
+      <form>
+        <Fieldset/>
+      </form>
     )
   }
 }
