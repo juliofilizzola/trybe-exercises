@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Fieldset from './Fieldset';
 
+
 export default class Form extends Component {
   constructor() {
     super();
@@ -19,7 +20,7 @@ export default class Form extends Component {
   render() {
     return (
       <form>
-        <Fieldset/>
+        <Fieldset />
       </form>
     )
   }

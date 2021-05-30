@@ -4,7 +4,7 @@ export default class Input extends Component {
   render() {
     return (
       <label>
-        <input type="text" placeholder=""></input>
+        <input type={"text"} placeholder=""></input>
       </label>
     )
   }
