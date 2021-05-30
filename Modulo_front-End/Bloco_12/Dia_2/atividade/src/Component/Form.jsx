@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import Fieldset from './Fieldset';
 import Fildset from './Fildset';
+import Input from './Input';
 
 
 export default class Form extends Component {
@@ -9,12 +10,12 @@ export default class Form extends Component {
 
     this.state = {
       nome: '',
-      idade: 0,
       endereco: '',
       cpf: '',
       city: '',
       estado: '',
-      tipo: '',
+      type: '',
+      email: '',
 
     }
 
@@ -37,7 +38,7 @@ export default class Form extends Component {
   render() {
     return (
       <form>
-        <Fieldset />
+        <Input func={this.changeState} />
         <Fildset/>
       </form>
     )

@@ -2,11 +2,12 @@ import React, { Component } from 'react'
 
 export default class Input extends Component {
   render() {
+    const {func} = this.props;
     return (
       <>
       <label>
         Seu Nome: 
-        <input name='name' type="text" placeholder="Nome" required/>
+        <input name='nome' type="text" onChange={(event) =>func(event)} placeholder="Nome" required/>
       </label> 
       <label>
         Seu E-mail: 
@@ -23,15 +24,15 @@ export default class Input extends Component {
       </label>
       <label>
         Sua Cidade: 
-        <input name='city' type="text" placeholder="Cidade"/>
+        <input name='city' type="text" placeholder="Cidade" required/>
       </label>
       <label>
         Casa 
-        <input name='type' type="radio" placeholder="Nome"/>
+        <input name='type' type="radio" value="casa" placeholder="Nome"required/>
       </label>
       <label>
         Apartamento 
-        <input name='type' type="Casa" placeholder="Nome"/>
+        <input name='type' type="Casa" value="Apartamento" placeholder="Nome" required/>
       </label>
       </>
     )

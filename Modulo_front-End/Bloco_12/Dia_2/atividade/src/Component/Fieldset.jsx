@@ -19,13 +19,13 @@ handleMouseEnter() {
   }
 }
   render() {
-
+      const {func} = this.props;
     return (
       <fieldset>
         <legend>
           Seus Dados:
         </legend>
-        <Input/>
+        <Input func={func}/>
         <Combo state={States} />
       </fieldset>
     )
