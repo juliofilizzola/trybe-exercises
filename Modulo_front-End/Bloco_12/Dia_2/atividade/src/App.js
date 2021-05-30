@@ -1,10 +1,9 @@
-import logo from './logo.svg';
 import './App.css';
-import Fieldset from './Component/Fieldset';
+import Form from './Component/Form';
 
 function App() {
   return (
-      <Fieldset/>
+    <Form/>
   );
 }
 
