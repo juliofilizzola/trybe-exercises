@@ -27,9 +27,12 @@ class App extends React.Component {
   }
 
   handleMouseEnter() {
-  if(this.state.counterMouserEnter === false) {
-    alert('Preencha isso, seu arrombado!')
-  }
+    if(this.state.counterMouserEnter === false) {
+      alert('Preencha isso, seu arrombado!')
+      this.setState({
+        counterMouserEnter: true,
+      })
+    }
   }
 
   changeState({target}) {
@@ -54,7 +57,8 @@ class App extends React.Component {
           <Input func={this.changeState}/>
           <Combo state={ States } func={this.changeState}/>
         </fieldset>
-        <TextArea/>
+  
+        <TextArea handleMouseEnter={this.handleMouseEnter} />
       </form>
     );
   }
