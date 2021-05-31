@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 
-export default class Fildset extends Component {
+export default class TextArea extends Component {
   render() {
     return (
       <fieldset>

@@ -50,7 +50,7 @@ class App extends React.Component {
             Seus Dados:
           </legend>
           <Input func={this.changeState}/>
-          <Combo state={ States }/>
+          <Combo state={ States } func={this.changeState}/>
         </fieldset>
   
   
