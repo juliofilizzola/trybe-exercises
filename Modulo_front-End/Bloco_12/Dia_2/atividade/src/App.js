@@ -21,12 +21,25 @@ class App extends React.Component {
     }
 
     this.changeState = this.changeState.bind(this);
+    this.handleMouseEnter = this.handleMouseEnter.bind(this);
   }
 
   handleMouseEnter() {
   if(this.state.counterMouserEnter === false) {
     alert('Preencha isso, seu arrombado!')
   }
+  }
+
+  changeState({target}) {
+    let {name, value} = target;
+    if(this.setState.name === "name") {
+      value = value.toUppercase;
+    }
+
+    this.setState({
+      [name]: value,
+    })
+
   }
 
   render() {
@@ -36,7 +49,7 @@ class App extends React.Component {
           <legend>
             Seus Dados:
           </legend>
-          <Input/>
+          <Input func={this.changeState}/>
           <Combo state={ States }/>
         </fieldset>
   
