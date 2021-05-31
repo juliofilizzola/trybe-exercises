@@ -57,8 +57,11 @@ class App extends React.Component {
           <Input func={this.changeState}/>
           <Combo state={ States } func={this.changeState}/>
         </fieldset>
-  
-        <TextArea handleMouseEnter={this.handleMouseEnter} />
+        <fieldset>
+          <legend>Descrições</legend>
+          <TextArea handleMouseEnter={this.handleMouseEnter} />
+
+        </fieldset>
       </form>
     );
   }
