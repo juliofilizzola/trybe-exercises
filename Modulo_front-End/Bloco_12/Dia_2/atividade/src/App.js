@@ -1,7 +1,9 @@
 import React from 'react';
 import Combo from './Component/Combo';
 import Input from './Component/Input';
+import TextArea from './Component/TextArea';
 import States from './States';
+
 
 
 class App extends React.Component {
@@ -52,8 +54,7 @@ class App extends React.Component {
           <Input func={this.changeState}/>
           <Combo state={ States } func={this.changeState}/>
         </fieldset>
-  
-  
+        <TextArea/>
       </form>
     );
   }
