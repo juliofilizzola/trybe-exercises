@@ -46,7 +46,7 @@ export default class DataJoke extends Component {
   }
 
   render() {
-    const { storedJokes, jokeObj, loading } = this.state;
+    const { storedJokes, loading } = this.state;
     const loadingElement = <span>Loading...</span>;
 
     return(
