@@ -12,7 +12,7 @@ export default class DataJoke extends Component {
 
   fetchJoke = async () => {
     const requestHeaders = { headers: { Accept: 'application/json' } };
-    const requestReturn = await fetch('https://icanhazdadjoke.com/');
+    const requestReturn = await fetch('https://icanhazdadjoke.com/', requestHeaders);
     const requestObject = await requestReturn.json();
 
     this.setState({
@@ -44,7 +44,7 @@ export default class DataJoke extends Component {
 
     return(
       <div>
-        <span>{storedJokes.map(({ id, joke }) => (<p key{ id } > {joke} </p>))}</span>
+        <span>{storedJokes.map(({ id, joke }) => (<p key={ id } > {joke} </p>))}</span>
         <span> Renderização condiciional </span>
       </div>
     )
