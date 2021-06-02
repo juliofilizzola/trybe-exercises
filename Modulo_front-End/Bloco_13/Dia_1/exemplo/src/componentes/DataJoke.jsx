@@ -2,7 +2,6 @@ import React, { Component } from 'react'
 
 // exemplo dobre ciclo de vida.
 // foi feita com base no vídeos disponivel no course.
-
 export default class DataJoke extends Component {
   constructor() {
     super();
