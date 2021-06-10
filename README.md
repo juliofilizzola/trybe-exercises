@@ -23,6 +23,6 @@ Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas 
 - 10- Testes Automatizados com Jest.
 - 11- Intro ao React.
 - 12- Componentes com Estado, Eventos e Formulários com React.
-
+- 13- Ciclo de vida de Componentes React.
 
 Caso queira me ajudar, pode fazer um CD nos pull requests que tiver, ficarei bastante contente com sua ajuda.
