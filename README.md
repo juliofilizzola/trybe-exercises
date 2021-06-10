@@ -20,6 +20,9 @@ Bom eu ainda sou um padawan ( ͡❛ ͜ʖ ͡❛) ✌, então vai ter de coisas 
 - 7- HTML & CSS (Forms, Flexbox e Responsivo)
 - 8- HOF:  forEach, find, some, every, sort, map, filter reduce, spread operator, parametro rest, destructuring e mais.
 - 9- JavaScript Assíncrono e Promises.
-
+- 10- Testes Automatizados com Jest.
+- 11- Intro ao React.
+- 12- Componentes com Estado, Eventos e Formulários com React.
+- 13- Ciclo de vida de Componentes React.
 
 Caso queira me ajudar, pode fazer um CD nos pull requests que tiver, ficarei bastante contente com sua ajuda.
