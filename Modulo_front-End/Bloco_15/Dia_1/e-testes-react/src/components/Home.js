@@ -31,7 +31,11 @@ export default class Home extends Component {
           Email:
           <input id='ip' value={ id } type='text' name='id' onChange={ this.handlerState} />
         </label>
-        <input type="button" value="Enviar" data-testid="id-send" onClick={ () => this.handlerSaveState(id) }/>
+        <input
+          type="button" value="Enviar"
+          data-testid="id-send"
+          onClick={ () => this.handlerSaveState(id) }
+        />
         <input type="button" value="voltar" />
         <p>{ idSave }</p>
       </div>
