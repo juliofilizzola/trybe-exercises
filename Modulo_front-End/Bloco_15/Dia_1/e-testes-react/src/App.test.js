@@ -13,7 +13,9 @@ test('verifica se há um input de email na tela', () => {
 });
 
 test('verifica se há botões na tela.', () => {
-  const { getByRole } = render(<App/>);
-  const button = getByRole('button');
-  expect(button).toBeInTheDocument();
+  const { getAllByRole } = render(<App/>);
+  const button = getAllByRole('button');
+  // expect(button).toBeInTheDocument(); como existe 2 botões ele não consegue destinguir e dar erro 
+  // modo correto 
+  expect(button.length).toBe(2)
 })
