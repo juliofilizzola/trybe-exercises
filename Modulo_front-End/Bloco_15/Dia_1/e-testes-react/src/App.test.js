@@ -1,4 +1,4 @@
-import { render, screen } from '@testing-library/react';
+import { getRoles, render, screen } from '@testing-library/react';
 import App from './App';
 
 test('verifica se há um input de email na tela', () => {
@@ -9,6 +9,11 @@ test('verifica se há um input de email na tela', () => {
   expect(linkElement).toBeInTheDocument();
   // verifica se é renderizado.
   expect(linkElement.type).toBe('text')
-  // verificando o tipo do item renderizado. 
-  
+  // verificando o tipo do item renderizado.
 });
+
+test('verifica se há botões na tela.', () => {
+  const { getByRole } = render(<App/>);
+  const button = getByRole('button');
+  expect(button).toBeInTheDocument();
+})
