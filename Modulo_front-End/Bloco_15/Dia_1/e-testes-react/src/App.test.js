@@ -1,4 +1,4 @@
-import { getRoles, render, screen } from '@testing-library/react';
+import { render } from '@testing-library/react';
 import App from './App';
 
 test('verifica se há um input de email na tela', () => {
