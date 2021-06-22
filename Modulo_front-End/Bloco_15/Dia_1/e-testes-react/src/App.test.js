@@ -18,4 +18,11 @@ test('verifica se há botões na tela.', () => {
   // expect(button).toBeInTheDocument(); como existe 2 botões ele não consegue destinguir e dar erro 
   // modo correto 
   expect(button.length).toBe(2)
-})
+});
+
+test('teste de botões ', () => {
+   const { getByTestId } = render(<App />);
+   const button = getByTestId('id-send');
+   expect(button).toBeInTheDocument();
+   expect(button).toHaveValue('Enviar');
+});

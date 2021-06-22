@@ -32,7 +32,8 @@ export default class Home extends Component {
           <input id='ip' value={ id } type='text' name='id' onChange={ this.handlerState} />
         </label>
         <input
-          type="button" value="Enviar"
+          type="button"
+          value="Enviar"
           data-testid="id-send"
           onClick={ () => this.handlerSaveState(id) }
         />
