@@ -1,4 +1,4 @@
-import { render } from '@testing-library/react';
+import { render, fireEvent } from '@testing-library/react';
 import App from './App';
 
 test('verifica se há um input de email na tela', () => {
@@ -29,7 +29,15 @@ test('teste de botões ', () => {
 
 it('Verifica que, ao  inserir um email e clcciar em "enviar, o email apareça na tela', () => {
   const { getByTestId, getByLabelText } = render(<App />);
-  const emailImput = getByLabelText('Email');
+  const emailInput = getByLabelText('Email:');
   const sendButton = getByTestId('id-send');
   const userEmail = getByTestId('id-user-email');
+
+
+  fireEvent.change(emailInput, { target: { value: 'juliofilizzola@hotmail.com' } })
+
+  fireEvent.click(sendButton);
+
+  expect(emailInput.value).toBe('');
+  expect(userEmail.textContent).toBe('Valor: juliofilizzola@hotmail.com');
 })

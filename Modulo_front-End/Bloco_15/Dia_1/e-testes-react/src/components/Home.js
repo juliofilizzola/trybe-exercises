@@ -29,7 +29,7 @@ export default class Home extends Component {
       <div>
         <label htmlFor="ip">
           Email:
-          <input id='ip' value={ id } type='text' name='id' onChange={ this.handlerState} />
+          <input id='ip' value={ id } type='text' data-testid='test' name='id' onChange={ this.handlerState} />
         </label>
         <input
           type="button"
@@ -38,7 +38,7 @@ export default class Home extends Component {
           onClick={ () => this.handlerSaveState(id) }
         />
         <input type="button" value="voltar" />
-        <p data-testid="id-user-email">{ idSave }</p>
+        <p data-testid="id-user-email">{`Valor: ${idSave}` }</p>
       </div>
     )
   }
