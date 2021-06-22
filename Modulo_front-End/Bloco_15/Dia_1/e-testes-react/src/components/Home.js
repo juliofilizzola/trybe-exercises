@@ -38,7 +38,7 @@ export default class Home extends Component {
           onClick={ () => this.handlerSaveState(id) }
         />
         <input type="button" value="voltar" />
-        <p>{ idSave }</p>
+        <p data-testid="id-user-email">{ idSave }</p>
       </div>
     )
   }

@@ -26,3 +26,10 @@ test('teste de botões ', () => {
    expect(button).toBeInTheDocument();
    expect(button).toHaveValue('Enviar');
 });
+
+it('Verifica que, ao  inserir um email e clcciar em "enviar, o email apareça na tela', () => {
+  const { getByTestId, getByLabelText } = render(<App />);
+  const emailImput = getByLabelText('Email');
+  const sendButton = getByTestId('id-send');
+  const userEmail = getByTestId('id-user-email');
+})
