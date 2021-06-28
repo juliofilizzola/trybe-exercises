@@ -49,9 +49,14 @@
       document.querySelector('.INCREMENT').addEventListener('change', ({target}) => {
         store.dispatch({
           type: 'INCREMENT',
+          value: Number(target.value),
+        });
+      });
+      document.querySelector('.DECREMENT').addEventListener('change', ({target}) => {
+        store.dispatch({
+          type: 'DECREMENT',
           value: target.value,
         });
-        console.log(target.value);
       });
 
       //subscribe fica escutando o store e fazendo as alterações no HTML.
