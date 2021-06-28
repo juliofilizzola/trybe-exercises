@@ -12,13 +12,15 @@
     <div>
       Clicou <span id="value"></span> vezes.
       <br />
+      <label>
+          <input type="text" Class='INCREMENT'>
+      </label>
       <button id="increment">+</button>
       <button id="decrement">-</button>
     </div>
     <script>
       const store = Redux.createStore(contadorReducer);
       function contadorReducer(state = 0, action) {
-        console.log(action);
         switch (action.type) {
           case 'INCREMENT':
             return state + action.value;
@@ -40,6 +42,15 @@
           value: 1,
         });
       });
+
+      document.querySelector('.INCREMENT').addEventListener('change', ({target}) => {
+        store.dispatch({
+          type: 'INCREMENT',
+          value: target.value,
+        });
+        console.log(target.value);
+      });
+
       //subscribe fica escutando o store e fazendo as alterações no HTML.
       store.subscribe(
         () => (document.getElementById('value').innerHTML = store.getState())
