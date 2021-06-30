@@ -1,6 +1,8 @@
 import React from 'react'
+import Data from '../data';
 
 export default function FormsPerson() {
+  console.log(Data);
   return (
     <form>
       <label htmlFor="name">
@@ -39,6 +41,11 @@ export default function FormsPerson() {
           maxLength="50"
           id="city"
         />
+      </label>
+      <label htmlFor="city">
+        <select>
+          { Data.map((value) => (<option value={value} key={value}>{value}</option>))}
+        </select>
       </label>
     </form>
   )
