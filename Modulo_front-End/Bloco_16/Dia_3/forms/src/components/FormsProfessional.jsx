@@ -1,6 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { connect } from 'react-redux';
+import profSendForm from '../actions/profSendForm'
 
-export default function ProfessionalFielset() {
+
+export default function ProfessionalFieldset({profInfo}) {
 
   return (
     <div>
@@ -9,7 +12,7 @@ export default function ProfessionalFielset() {
           <textarea
             name="resume"
             maxLength="1000"
-            // onChange={}
+            onChange={profInfo}
             required
           />
         </label>
@@ -17,7 +20,7 @@ export default function ProfessionalFielset() {
           <input
             name="role"
             maxLength="40"
-            // onChange={}
+            onChange={profInfo}
             onMouseEnter={() => {
               alert('Preencha com cuidado essa informação.')
             }}
@@ -28,10 +31,16 @@ export default function ProfessionalFielset() {
           <textarea
             name="roleDescription"
             maxLength="500"
-            // onChange={}
+            onChange={profInfo}
           />
         </label>
       </fieldset>
     </div>
   )
 }
+
+const mapDispatchToProps = (dispatch) => ({
+  profInfo: (state) => dispatch(profSendForm(state))
+})
+
+connect(null, mapDispatchToProps)(ProfessionalFieldset);

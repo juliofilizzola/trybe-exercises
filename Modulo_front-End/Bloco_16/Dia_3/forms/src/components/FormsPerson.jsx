@@ -1,7 +1,9 @@
-import React from 'react'
+import React from 'react';
+import { connect } from 'react-redux';
+import personSendForm from '../actions/personSendForm';
 import Data from '../data';
 
-export default function FormsPerson() {
+export default function FormsPerson({personInfo}) {
   return (
     <form>
      <fieldset>
@@ -13,11 +15,13 @@ export default function FormsPerson() {
             id="name"
             isRequired
             maxLength="40"
+            onChange={personInfo}
             />
         </label>
         <label htmlFor="cpf">
           Seu CPF:
           <input
+            onChange={personInfo}
             type="text"
             isRequired
             maxLength="11"
@@ -27,6 +31,7 @@ export default function FormsPerson() {
         <label htmlFor="address">
           Seu Endereço:
           <input
+            onChange={personInfo}
             type="text"
             isRequired
             maxLength="50"
@@ -36,6 +41,7 @@ export default function FormsPerson() {
         <label htmlFor="city">
           Sua Cidade:
           <input
+            onChange={personInfo}
             type="text"
             isRequired
             maxLength="50"
@@ -43,17 +49,28 @@ export default function FormsPerson() {
           />
         </label>
         <label htmlFor="state">
-          <select id="state">
+          <select 
+            id="state"
+            onChange={personInfo}
+          >
             { Data.map((value) => (<option value={value} key={value}>{value}</option>))}
           </select>
         </label>
         <label htmlFor="address">
           Casa:
-          <input type="checkbox" name="address" id="" value="Casa"/>
-          AP:
-          <input type="checkbox" name="address" id="" value="Apartamento" />
+          <input type="checkbox" onChange={personInfo} name="address" value="Casa"/>
+        </label>
+        <label htmlFor="address">
+            AP:
+          <input type="checkbox" onChange={personInfo} name="address" value="Apartamento" />
         </label>
      </fieldset>
     </form>
   )
 }
+
+const mapDispatchToProps = (dispatch) => ({
+  personInfo: (state) => dispatch(personSendForm(state))
+})
+
+connect(null, mapDispatchToProps)(FormsPerson);
