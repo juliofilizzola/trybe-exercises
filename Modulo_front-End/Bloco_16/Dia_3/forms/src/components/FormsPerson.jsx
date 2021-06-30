@@ -42,10 +42,16 @@ export default function FormsPerson() {
           id="city"
         />
       </label>
-      <label htmlFor="city">
-        <select>
+      <label htmlFor="state">
+        <select id="state">
           { Data.map((value) => (<option value={value} key={value}>{value}</option>))}
         </select>
+      </label>
+      <label htmlFor="address">
+        Casa:
+        <input type="checkbox" name="address" id="" value="Casa"/>
+        AP:
+        <input type="checkbox" name="address" id="" value="Apartamento" />
       </label>
     </form>
   )
