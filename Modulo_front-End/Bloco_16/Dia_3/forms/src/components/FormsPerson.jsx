@@ -31,13 +31,13 @@ export default function FormsPerson() {
           id="address"
         />
       </label>
-      <label htmlFor="email">
-        Seu Email:
+      <label htmlFor="city">
+        Sua Cidade:
         <input
           type="text"
           isRequired
           maxLength="50"
-          id="email"
+          id="city"
         />
       </label>
     </form>
