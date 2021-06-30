@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import personSendForm from '../actions/personSendForm';
 import Data from '../data';
 
-export default function FormsPerson({personInfo}) {
+function FormsPerson({personInfo}) {
   return (
     <form>
      <fieldset>
@@ -12,20 +12,27 @@ export default function FormsPerson({personInfo}) {
           <input
             type="text"
             placeholder="Digite seu Nome"
-            id="name"
-            isRequired
+            name="name"
             maxLength="40"
             onChange={personInfo}
             />
+        </label>
+        <label htmlFor="email">
+          Email:
+          <input
+            onChange={personInfo}
+            type="text"
+            maxLength="11"
+            name="email"
+          />
         </label>
         <label htmlFor="cpf">
           Seu CPF:
           <input
             onChange={personInfo}
             type="text"
-            isRequired
             maxLength="11"
-            id="cpf"
+            name="cpf"
           />
         </label>
         <label htmlFor="address">
@@ -33,9 +40,8 @@ export default function FormsPerson({personInfo}) {
           <input
             onChange={personInfo}
             type="text"
-            isRequired
             maxLength="50"
-            id="address"
+            name="address"
           />
         </label>
         <label htmlFor="city">
@@ -45,12 +51,12 @@ export default function FormsPerson({personInfo}) {
             type="text"
             isRequired
             maxLength="50"
-            id="city"
+            name="city"
           />
         </label>
         <label htmlFor="state">
           <select 
-            id="state"
+            name="state"
             onChange={personInfo}
           >
             { Data.map((value) => (<option value={value} key={value}>{value}</option>))}
@@ -58,11 +64,11 @@ export default function FormsPerson({personInfo}) {
         </label>
         <label htmlFor="address">
           Casa:
-          <input type="checkbox" onChange={personInfo} name="address" value="Casa"/>
+          <input type="checkbox" onChange={personInfo} name="addressType" value="Casa"/>
         </label>
         <label htmlFor="address">
             AP:
-          <input type="checkbox" onChange={personInfo} name="address" value="Apartamento" />
+          <input type="checkbox" onChange={personInfo} name="addressType" value="Apartamento" />
         </label>
      </fieldset>
     </form>
@@ -73,4 +79,4 @@ const mapDispatchToProps = (dispatch) => ({
   personInfo: (state) => dispatch(personSendForm(state))
 })
 
-connect(null, mapDispatchToProps)(FormsPerson);
+export default connect(null, mapDispatchToProps)(FormsPerson);

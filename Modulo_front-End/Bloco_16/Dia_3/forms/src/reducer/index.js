@@ -7,6 +7,7 @@ const INITIAL ={
     city: '',
     state: '',
     addressType: '',
+    cpf: '',
   },
   profInfo : {
     resume: '',
@@ -17,8 +18,8 @@ const INITIAL ={
 }
 
 export default function MyReducer(state = INITIAL, action) {
-  if(action.type){
-    state[action.type][action.name]= action.value;
+  if (action.value) {
+    state[action.type][action.name] = action.value
   }
   return state;
 }

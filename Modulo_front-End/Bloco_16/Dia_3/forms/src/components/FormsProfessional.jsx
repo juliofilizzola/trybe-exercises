@@ -3,7 +3,7 @@ import { connect } from 'react-redux';
 import profSendForm from '../actions/profSendForm'
 
 
-export default function ProfessionalFieldset({profInfo}) {
+function ProfessionalFieldset({profInfo}) {
 
   return (
     <div>
@@ -43,4 +43,4 @@ const mapDispatchToProps = (dispatch) => ({
   profInfo: (state) => dispatch(profSendForm(state))
 })
 
-connect(null, mapDispatchToProps)(ProfessionalFieldset);
+export default connect(null, mapDispatchToProps)(ProfessionalFieldset);
