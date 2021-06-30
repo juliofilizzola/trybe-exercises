@@ -1,0 +1,68 @@
+
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Redux sem React</title>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/redux/4.1.0/redux.min.js"></script>
+  </head>
+  <body>
+    <div>
+      Clicou <span id="value"></span> vezes.
+      <br />
+      <label>
+          <input type="text" placeholder="adiciona ai" Class='INCREMENT'>
+      </label>
+      <label>
+        <input type="text" placeholder="diminui aí" Class='DECREMENT'>
+    </label>
+      <button id="increment">+</button>
+      <button id="decrement">-</button>
+    </div>
+    <script>
+      const store = Redux.createStore(contadorReducer);
+      function contadorReducer(state = 0, action) {
+        switch (action.type) {
+          case 'INCREMENT':
+            return state + action.value;
+          case 'DECREMENT':
+            return state - action.value;
+          default:
+            return state;
+        }
+      }
+      document.getElementById('increment').addEventListener('click', () => {
+        store.dispatch({
+          type: 'INCREMENT',
+          value: 1,
+        });
+      });
+      document.getElementById('decrement').addEventListener('click', () => {
+        store.dispatch({
+          type: 'DECREMENT',
+          value: 1,
+        });
+      });
+
+      document.querySelector('.INCREMENT').addEventListener('change', ({target}) => {
+        store.dispatch({
+          type: 'INCREMENT',
+          value: Number(target.value),
+        });
+      });
+      document.querySelector('.DECREMENT').addEventListener('change', ({target}) => {
+        store.dispatch({
+          type: 'DECREMENT',
+          value: target.value,
+        });
+      });
+
+      //subscribe fica escutando o store e fazendo as alterações no HTML.
+      store.subscribe(
+        () => (document.getElementById('value').innerHTML = store.getState())
+      );
+    </script>
+  </body>
+</html>
