@@ -2,7 +2,6 @@ import React from 'react'
 import Data from '../data';
 
 export default function FormsPerson() {
-  console.log(Data);
   return (
     <form>
       <label htmlFor="name">
