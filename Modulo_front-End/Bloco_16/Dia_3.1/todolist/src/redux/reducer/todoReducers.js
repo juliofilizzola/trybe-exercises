@@ -13,6 +13,7 @@ function todoReducer(state = INITIAL_STATE, action) {
   }
   if(action.type === 'REMOVE_TASK') {
     return {
+      task: state.task.filter((task, index )=> index !== action.index),
       count: state.count - 1,
     }
   }
